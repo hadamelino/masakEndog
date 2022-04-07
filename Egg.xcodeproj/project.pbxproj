@@ -22,8 +22,6 @@
 		C4342AB127FC20A9005F1E18 /* EggTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342AB027FC20A9005F1E18 /* EggTests.swift */; };
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
-		C446A47F27FF141400798D62 /* testSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C446A47E27FF141400798D62 /* testSB.storyboard */; };
-		C446A48127FF142700798D62 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446A48027FF142700798D62 /* testViewController.swift */; };
 		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +45,7 @@
 /* Begin PBXFileReference section */
 		2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPageStoryboard.storyboard; sourceTree = "<group>"; };
 		2962870C27FF382E009F00B0 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
-		2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailPageCollectionViewCell.swift; path = Egg/View/DetailPageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailPageCollectionViewCell.swift; path = Egg/DetailPage/DetailPageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodTableViewCell.swift; sourceTree = "<group>"; };
 		C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodTableViewCell.xib; sourceTree = "<group>"; };
 		C4051A1227FEBE3000B284F6 /* customTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableView.swift; sourceTree = "<group>"; };
@@ -64,8 +62,6 @@
 		C4342AB627FC20A9005F1E18 /* EggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C446A47E27FF141400798D62 /* testSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = testSB.storyboard; sourceTree = "<group>"; };
-		C446A48027FF142700798D62 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,9 +93,7 @@
 		C4051A1B27FEF5E000B284F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
 				C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */,
-				C446A48027FF142700798D62 /* testViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,11 +101,8 @@
 		C4051A1C27FEF5EA00B284F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C446A47E27FF141400798D62 /* testSB.storyboard */,
 				C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */,
-				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
 				C4051A1227FEBE3000B284F6 /* customTableView.swift */,
-				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
 				C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */,
 				C4342A9F27FC20A8005F1E18 /* Main.storyboard */,
 				C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */,
@@ -144,8 +135,8 @@
 			children = (
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
-				C4051A1B27FEF5E000B284F6 /* Controller */,
-				C4051A1C27FEF5EA00B284F6 /* View */,
+				C44A43A127FF400A0059BC91 /* HomePage */,
+				C44A43A027FF3FE80059BC91 /* DetailPage */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
 				C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */,
 				C4342AA727FC20A8005F1E18 /* Info.plist */,
@@ -168,6 +159,25 @@
 				C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */,
 			);
 			path = EggUITests;
+			sourceTree = "<group>";
+		};
+		C44A43A027FF3FE80059BC91 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
+				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
+				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		C44A43A127FF400A0059BC91 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				C4051A1B27FEF5E000B284F6 /* Controller */,
+				C4051A1C27FEF5EA00B284F6 /* View */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +287,6 @@
 				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
-				C446A47F27FF141400798D62 /* testSB.storyboard in Resources */,
 				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
 				2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */,
 			);
@@ -306,7 +315,6 @@
 			files = (
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
-				C446A48127FF142700798D62 /* testViewController.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
 				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
