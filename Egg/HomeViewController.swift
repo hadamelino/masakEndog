@@ -7,12 +7,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
 
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var methodTableView: UITableView!
-    
+    @IBOutlet weak var greyBackground: UIView!
+    @IBOutlet weak var recipeCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        recipeCollectionView.delegate = self
+        recipeCollectionView.dataSource = self
+        
         methodTableView.delegate = self
         methodTableView.dataSource = self
         methodTableView.register(UINib(nibName: "MethodTableViewCell", bundle: nil), forCellReuseIdentifier: "methodCell")
         methodTableView.rowHeight = UITableView.automaticDimension
+        methodTableView.separatorStyle = .none
+        
+        greyBackground.layer.borderWidth = 1.0
+        greyBackground.layer.borderColor = UIColor(named: "customBorderGrey")?.cgColor
     }
     
     
