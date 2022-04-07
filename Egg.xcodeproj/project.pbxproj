@@ -10,6 +10,7 @@
 		29C77E3F27FDA1A1004A74A6 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C77E3E27FDA1A1004A74A6 /* DetailPageViewController.swift */; };
 		29C77E4127FEA226004A74A6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C77E4027FEA226004A74A6 /* MyCollectionViewCell.swift */; };
 		29F6919827FEEF16002147A7 /* DetailPageStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6919727FEEF16002147A7 /* DetailPageStoryBoard.storyboard */; };
+		29F6919C27FEF1E0002147A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6919B27FEF1E0002147A7 /* Main.storyboard */; };
 		C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9927FC20A8005F1E18 /* AppDelegate.swift */; };
 		C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */; };
 		C4342A9E27FC20A8005F1E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9D27FC20A8005F1E18 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		29C77E3E27FDA1A1004A74A6 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		29C77E4027FEA226004A74A6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		29F6919727FEEF16002147A7 /* DetailPageStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPageStoryBoard.storyboard; sourceTree = "<group>"; };
+		29F6919B27FEF1E0002147A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		C4342A9627FC20A8005F1E18 /* Egg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Egg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342A9927FC20A8005F1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		C4342A9827FC20A8005F1E18 /* Egg */ = {
 			isa = PBXGroup;
 			children = (
+				29F6919B27FEF1E0002147A7 /* Main.storyboard */,
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
 				C4342A9D27FC20A8005F1E18 /* ViewController.swift */,
@@ -240,6 +243,7 @@
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
 				29F6919827FEEF16002147A7 /* DetailPageStoryBoard.storyboard in Resources */,
+				29F6919C27FEF1E0002147A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
