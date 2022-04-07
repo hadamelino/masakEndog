@@ -141,18 +141,73 @@
             <objects>
                 <viewController id="tHW-ri-c5N" customClass="EggMethodsController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2yK-tI-KlZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1036"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JV0-l4-74o">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="qC7-5T-3HO">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="HNa-ip-FLB">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RXm-he-A2N">
+                                                <rect key="frame" x="20" y="0.0" width="130" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.99607843159999998" green="0.78823530669999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=" Back">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="18"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oil-Based" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r1n-Rc-C9V">
+                                <rect key="frame" x="20" y="100" width="140" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du7-bN-uqt">
+                                <rect key="frame" x="0.0" y="136" width="414" height="900"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cya-4q-Wwp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="900" id="YWr-Ek-WoR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Cya-4q-Wwp" secondAttribute="trailing" id="0Ca-oN-nTl"/>
+                                    <constraint firstItem="Cya-4q-Wwp" firstAttribute="leading" secondItem="du7-bN-uqt" secondAttribute="leading" id="0Va-VM-BNr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cya-4q-Wwp" secondAttribute="bottom" id="4zc-aT-zAf"/>
+                                    <constraint firstItem="Cya-4q-Wwp" firstAttribute="top" secondItem="du7-bN-uqt" secondAttribute="top" id="IgE-rY-4o0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vzW-ur-Zfg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cya-4q-Wwp" firstAttribute="width" secondItem="2yK-tI-KlZ" secondAttribute="width" id="2nW-cV-CUx"/>
+                            <constraint firstItem="du7-bN-uqt" firstAttribute="top" secondItem="r1n-Rc-C9V" secondAttribute="bottom" id="7l6-2f-dvj"/>
+                            <constraint firstItem="du7-bN-uqt" firstAttribute="leading" secondItem="vzW-ur-Zfg" secondAttribute="leading" id="AGk-t3-74R"/>
+                            <constraint firstAttribute="bottom" secondItem="du7-bN-uqt" secondAttribute="bottom" id="KCb-sf-NOD"/>
+                            <constraint firstItem="du7-bN-uqt" firstAttribute="trailing" secondItem="vzW-ur-Zfg" secondAttribute="trailing" id="udf-JX-Oib"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="414" height="1036"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxk-Od-BVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.92753623188412" y="83.705357142857139"/>
+            <point key="canvasLocation" x="827.536231884058" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
