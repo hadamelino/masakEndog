@@ -84,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4051A1B27FEF5E000B284F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4051A1C27FEF5EA00B284F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */,
+				C4051A1227FEBE3000B284F6 /* customTableView.swift */,
+				C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */,
+				C4342A9F27FC20A8005F1E18 /* Main.storyboard */,
+				C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C4342A8D27FC20A8005F1E18 = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +129,8 @@
 			children = (
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
-				C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */,
-				C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */,
-				C4051A1227FEBE3000B284F6 /* customTableView.swift */,
-				C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */,
-				C4342A9F27FC20A8005F1E18 /* Main.storyboard */,
-				C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */,
+				C4051A1B27FEF5E000B284F6 /* Controller */,
+				C4051A1C27FEF5EA00B284F6 /* View */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
 				C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */,
 				C4342AA727FC20A8005F1E18 /* Info.plist */,
