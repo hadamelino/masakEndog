@@ -135,6 +135,7 @@
 			children = (
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
+				C44A43A227FF45B10059BC91 /* EggMethodPage */,
 				C44A43A127FF400A0059BC91 /* HomePage */,
 				C44A43A027FF3FE80059BC91 /* DetailPage */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
@@ -178,6 +179,13 @@
 				C4051A1C27FEF5EA00B284F6 /* View */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		C44A43A227FF45B10059BC91 /* EggMethodPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EggMethodPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
