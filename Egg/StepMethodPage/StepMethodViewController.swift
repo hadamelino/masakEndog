@@ -31,8 +31,8 @@ class StepMethodViewController: UIViewController {
     @IBAction func nextStepPressed(_ sender: Any) {
         
         if count < method.stepText!.count {
-            stepImage.fadeTransition(0.2)
-            detailStepLabel.fadeTransition(0.2)
+            stepImage.fadeTransition(0.5, .push, .fromRight)
+            detailStepLabel.fadeTransition(0.2, .fade, .fromBottom)
             stepImage.image = UIImage(named: (method.imageStep![count]))
             methodTitle.text = method.methodName
             numberOfStepLabel.text = "\(count + 1) of \(method.stepText!.count)"
