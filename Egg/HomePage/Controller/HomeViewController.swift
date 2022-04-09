@@ -35,19 +35,19 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     
-    var bannerImage = "sample_image"
-    var bannerText = "Eggs of the day"
+    var bannerImage = "banner1"
+    var bannerText = "Make a Perfect Sunny Side Up"
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
-        cell.bannerImage.image = UIImage(named: bannerImage)
-        cell.bannerImage.layer.cornerRadius = 15
-        cell.bannerText.text = bannerText
-        return cell
+        let banner_cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
+        banner_cell.bannerImage.image = UIImage(named: bannerImage)
+        banner_cell.bannerImage.layer.cornerRadius = 15
+        banner_cell.bannerText.text = bannerText
+        return banner_cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,7 +58,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "methodCell", for: indexPath) as! MethodTableViewCell
-        cell.methodImage.image = UIImage(named: bannerImage)
+        cell.methodImage.image = UIImage(named: "sample_image")
         cell.methodImage.layer.cornerRadius = 15
        cell.methodLabel.text = bannerText
         return cell

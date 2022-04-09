@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
-                                <rect key="frame" x="12" y="88" width="390" height="463"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="463"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="390" id="cXU-E0-L3m"/>
+                                    <constraint firstAttribute="width" constant="414" id="cXU-E0-L3m"/>
                                     <constraint firstAttribute="height" constant="463" id="egS-OJ-3OB"/>
                                 </constraints>
                             </imageView>
