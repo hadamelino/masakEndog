@@ -11,8 +11,7 @@ class EggMethodsController: UIViewController {
     
     
     @IBOutlet weak var methodsCollection: UICollectionView!
-//    var methodImage : [UIImage] = [UIImage(named: "OverEasy")!, UIImage(named: "Scrambled")!, UIImage(named: "SunnySideUp")!]
-    var methodImage:[UIColor] = [.red, .blue, .gray, .green, .black, .brown, .cyan]
+    var methodImage : [UIImage] = [UIImage(named: "OverEasy")!, UIImage(named: "Scrambled")!, UIImage(named: "SunnySideUp")!]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +30,8 @@ extension EggMethodsController:UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MethodsCollectionViewCell", for: indexPath) as! MethodsCollectionViewCell
-        cell.methodImageContainer.backgroundColor = self.methodImage[indexPath.row]
+        cell.methodImage.image = self.methodImage[indexPath.row]
+        
         return cell
     }
     

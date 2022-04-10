@@ -43,6 +43,7 @@
             </constraints>
             <size key="customSize" width="200" height="100"/>
             <connections>
+                <outlet property="methodImage" destination="gNA-1T-L1T" id="U6w-Y4-EOB"/>
                 <outlet property="methodImageContainer" destination="w5r-RM-AwB" id="Eqe-q1-9NV"/>
             </connections>
             <point key="canvasLocation" x="246.37681159420291" y="110.49107142857143"/>
