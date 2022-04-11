@@ -12,7 +12,18 @@ class EggMethodsController: UIViewController {
     
     @IBOutlet weak var methodsCollection: UICollectionView!
     var methodImage : [UIImage] = [UIImage(named: "OverEasy")!, UIImage(named: "SunnySideUp")!, UIImage(named: "Scrambled")!]
-    var methodLabel : [String] = ["Over Easy", "Sunny Side Up", "Scrambled"]
+    var methodLabel : [String]  = ["Over Easy", "Sunny Side Up", "Scrambled"]
+    
+    lazy var darkShadow: CALayer = {
+        let darkShadow = CALayer()
+        darkShadow.cornerRadius     = 15
+        darkShadow.shadowColor      = UIColor.red.cgColor
+        darkShadow.shadowOffset     = .init(width: 5, height: 1)
+        darkShadow.shadowOpacity    = 1
+        darkShadow.shadowRadius     = 3
+        return darkShadow
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +43,10 @@ extension EggMethodsController:UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MethodsCollectionViewCell", for: indexPath) as! MethodsCollectionViewCell
-        cell.methodImage.image = self.methodImage[indexPath.row]
-        cell.methodLabel.text = self.methodLabel[indexPath.row]
-        cell.methodImage.layer.cornerRadius = 15;
-        
+        cell.methodImage.image  = self.methodImage[indexPath.row]
+        cell.methodLabel.text   = self.methodLabel[indexPath.row]
+        cell.methodImage.layer.cornerRadius     = 15
+        cell.methodImage.layer.addSublayer(darkShadow)
         return cell
     }
     
