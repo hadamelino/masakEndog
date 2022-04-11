@@ -13,19 +13,15 @@
 		C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */; };
 		C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */; };
 		C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4051A1227FEBE3000B284F6 /* customTableView.swift */; };
-		C416A1062804298C00D12EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C416A1042804298C00D12EFC /* Main.storyboard */; };
 		C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9927FC20A8005F1E18 /* AppDelegate.swift */; };
 		C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */; };
 		C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */; };
+		C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4342A9F27FC20A8005F1E18 /* Main.storyboard */; };
 		C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4342AA227FC20A8005F1E18 /* Assets.xcassets */; };
 		C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */; };
 		C4342AB127FC20A9005F1E18 /* EggTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342AB027FC20A9005F1E18 /* EggTests.swift */; };
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
-		C44A43B2280179160059BC91 /* MethodStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A43B1280179160059BC91 /* MethodStepData.swift */; };
-		C44A43B52801791F0059BC91 /* StepMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A43B32801791F0059BC91 /* StepMethodViewController.swift */; };
-		C44A43B62801791F0059BC91 /* StepMethodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44A43B42801791F0059BC91 /* StepMethodStoryboard.storyboard */; };
-		C44A43B828017F150059BC91 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A43B728017F150059BC91 /* Extension.swift */; };
 		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
 		E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069AA202800334C00195BAC /* EggMethodsController.swift */; };
 		E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069AA212800334C00195BAC /* EggMethods.storyboard */; };
@@ -55,11 +51,11 @@
 		C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodTableViewCell.swift; sourceTree = "<group>"; };
 		C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodTableViewCell.xib; sourceTree = "<group>"; };
 		C4051A1227FEBE3000B284F6 /* customTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableView.swift; sourceTree = "<group>"; };
-		C416A1052804298C00D12EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4342A9627FC20A8005F1E18 /* Egg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Egg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342A9927FC20A8005F1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4342AA027FC20A8005F1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4342AA227FC20A8005F1E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4342AA527FC20A8005F1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4342AA727FC20A8005F1E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,10 +64,6 @@
 		C4342AB627FC20A9005F1E18 /* EggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C44A43B1280179160059BC91 /* MethodStepData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodStepData.swift; sourceTree = "<group>"; };
-		C44A43B32801791F0059BC91 /* StepMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepMethodViewController.swift; sourceTree = "<group>"; };
-		C44A43B42801791F0059BC91 /* StepMethodStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StepMethodStoryboard.storyboard; sourceTree = "<group>"; };
-		C44A43B728017F150059BC91 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E069AA202800334C00195BAC /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EggMethodsController.swift; path = Egg/View/EggMethodsController.swift; sourceTree = SOURCE_ROOT; };
 		E069AA212800334C00195BAC /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EggMethods.storyboard; path = Egg/View/EggMethods.storyboard; sourceTree = SOURCE_ROOT; };
@@ -113,10 +105,10 @@
 		C4051A1C27FEF5EA00B284F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C416A1042804298C00D12EFC /* Main.storyboard */,
 				C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */,
 				C4051A1227FEBE3000B284F6 /* customTableView.swift */,
 				C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */,
+				C4342A9F27FC20A8005F1E18 /* Main.storyboard */,
 				C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */,
 			);
 			path = View;
@@ -151,9 +143,7 @@
 				C44A43A127FF400A0059BC91 /* HomePage */,
 				C44A43A027FF3FE80059BC91 /* DetailPage */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
-				C44A43B0280178ED0059BC91 /* StepMethodPage */,
 				C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */,
-				C44A43B728017F150059BC91 /* Extension.swift */,
 				C4342AA727FC20A8005F1E18 /* Info.plist */,
 			);
 			path = Egg;
@@ -202,16 +192,6 @@
 				E069AA202800334C00195BAC /* EggMethodsController.swift */,
 			);
 			path = EggMethodPage;
-			sourceTree = "<group>";
-		};
-		C44A43B0280178ED0059BC91 /* StepMethodPage */ = {
-			isa = PBXGroup;
-			children = (
-				C44A43B1280179160059BC91 /* MethodStepData.swift */,
-				C44A43B42801791F0059BC91 /* StepMethodStoryboard.storyboard */,
-				C44A43B32801791F0059BC91 /* StepMethodViewController.swift */,
-			);
-			path = StepMethodPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,12 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C416A1062804298C00D12EFC /* Main.storyboard in Resources */,
 				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
-				C44A43B62801791F0059BC91 /* StepMethodStoryboard.storyboard in Resources */,
 				E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */,
+				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
 				2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,14 +331,11 @@
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
-				C44A43B828017F150059BC91 /* Extension.swift in Sources */,
 				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
-				C44A43B52801791F0059BC91 /* StepMethodViewController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
 				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
 				2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */,
 				C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */,
-				C44A43B2280179160059BC91 /* MethodStepData.swift in Sources */,
 				C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +373,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C416A1042804298C00D12EFC /* Main.storyboard */ = {
+		C4342A9F27FC20A8005F1E18 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C416A1052804298C00D12EFC /* Base */,
+				C4342AA027FC20A8005F1E18 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -544,7 +520,7 @@
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = StepMethodStoryboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = EggMethods;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,7 +548,7 @@
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = StepMethodStoryboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = EggMethods;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
