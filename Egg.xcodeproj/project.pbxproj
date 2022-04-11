@@ -23,6 +23,9 @@
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
 		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
+		C4DBF6C628042E250068C443 /* StepMethodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */; };
+		C4DBF6C728042E250068C443 /* MethodStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBF6C428042E250068C443 /* MethodStepData.swift */; };
+		C4DBF6C828042E250068C443 /* StepMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBF6C528042E250068C443 /* StepMethodViewController.swift */; };
 		E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069AA202800334C00195BAC /* EggMethodsController.swift */; };
 		E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069AA212800334C00195BAC /* EggMethods.storyboard */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StepMethodStoryboard.storyboard; sourceTree = "<group>"; };
+		C4DBF6C428042E250068C443 /* MethodStepData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodStepData.swift; sourceTree = "<group>"; };
+		C4DBF6C528042E250068C443 /* StepMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepMethodViewController.swift; sourceTree = "<group>"; };
 		E069AA202800334C00195BAC /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EggMethodsController.swift; path = Egg/View/EggMethodsController.swift; sourceTree = SOURCE_ROOT; };
 		E069AA212800334C00195BAC /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EggMethods.storyboard; path = Egg/View/EggMethods.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -137,6 +143,7 @@
 		C4342A9827FC20A8005F1E18 /* Egg */ = {
 			isa = PBXGroup;
 			children = (
+				C4DBF6C928042E300068C443 /* StepMethodPage */,
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
 				C44A43A227FF45B10059BC91 /* EggMethodPage */,
@@ -192,6 +199,16 @@
 				E069AA202800334C00195BAC /* EggMethodsController.swift */,
 			);
 			path = EggMethodPage;
+			sourceTree = "<group>";
+		};
+		C4DBF6C928042E300068C443 /* StepMethodPage */ = {
+			isa = PBXGroup;
+			children = (
+				C4DBF6C428042E250068C443 /* MethodStepData.swift */,
+				C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */,
+				C4DBF6C528042E250068C443 /* StepMethodViewController.swift */,
+			);
+			path = StepMethodPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +318,7 @@
 				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
+				C4DBF6C628042E250068C443 /* StepMethodStoryboard.storyboard in Resources */,
 				E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */,
 				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
 				2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */,
@@ -332,10 +350,12 @@
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
 				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
+				C4DBF6C828042E250068C443 /* StepMethodViewController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
 				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
 				2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */,
 				C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */,
+				C4DBF6C728042E250068C443 /* MethodStepData.swift in Sources */,
 				C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
