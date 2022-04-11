@@ -26,6 +26,7 @@
 		C4DBF6C628042E250068C443 /* StepMethodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */; };
 		C4DBF6C728042E250068C443 /* MethodStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBF6C428042E250068C443 /* MethodStepData.swift */; };
 		C4DBF6C828042E250068C443 /* StepMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBF6C528042E250068C443 /* StepMethodViewController.swift */; };
+		C4DBF6CB28042F230068C443 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBF6CA28042F230068C443 /* Extension.swift */; };
 		E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069AA202800334C00195BAC /* EggMethodsController.swift */; };
 		E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069AA212800334C00195BAC /* EggMethods.storyboard */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StepMethodStoryboard.storyboard; sourceTree = "<group>"; };
 		C4DBF6C428042E250068C443 /* MethodStepData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodStepData.swift; sourceTree = "<group>"; };
 		C4DBF6C528042E250068C443 /* StepMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepMethodViewController.swift; sourceTree = "<group>"; };
+		C4DBF6CA28042F230068C443 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E069AA202800334C00195BAC /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EggMethodsController.swift; path = Egg/View/EggMethodsController.swift; sourceTree = SOURCE_ROOT; };
 		E069AA212800334C00195BAC /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EggMethods.storyboard; path = Egg/View/EggMethods.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -207,6 +209,7 @@
 				C4DBF6C428042E250068C443 /* MethodStepData.swift */,
 				C4DBF6C328042E250068C443 /* StepMethodStoryboard.storyboard */,
 				C4DBF6C528042E250068C443 /* StepMethodViewController.swift */,
+				C4DBF6CA28042F230068C443 /* Extension.swift */,
 			);
 			path = StepMethodPage;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
+				C4DBF6CB28042F230068C443 /* Extension.swift in Sources */,
 				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
 				C4DBF6C828042E250068C443 /* StepMethodViewController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
