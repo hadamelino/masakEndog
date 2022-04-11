@@ -11,25 +11,40 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MethodsCollectionViewCell" customModule="Egg" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="334" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="334" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-x4-NzV">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="200"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-gU-UNL">
-                                <rect key="frame" x="0.0" y="7" width="200" height="86"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-gU-UNL">
+                                <rect key="frame" x="0.0" y="7" width="334" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-tR-n6v">
+                                <rect key="frame" x="20" y="150" width="194" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="20" name="SFPro-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TtW-gU-UNL" firstAttribute="top" secondItem="Qfp-x4-NzV" secondAttribute="top" constant="7" id="3fd-i5-18m"/>
-                            <constraint firstAttribute="trailing" secondItem="TtW-gU-UNL" secondAttribute="trailing" id="JyY-mI-bQ8"/>
-                            <constraint firstItem="TtW-gU-UNL" firstAttribute="leading" secondItem="Qfp-x4-NzV" secondAttribute="leading" id="KqC-1d-z27"/>
-                            <constraint firstAttribute="bottom" secondItem="TtW-gU-UNL" secondAttribute="bottom" constant="7" id="vOJ-7f-Jm4"/>
+                            <constraint firstItem="TB9-tR-n6v" firstAttribute="leading" secondItem="Qfp-x4-NzV" secondAttribute="leading" constant="20" id="3g5-Kd-JuK"/>
+                            <constraint firstItem="TB9-tR-n6v" firstAttribute="top" secondItem="Qfp-x4-NzV" secondAttribute="top" constant="150" id="8FE-lf-tWw"/>
+                            <constraint firstAttribute="bottom" secondItem="TB9-tR-n6v" secondAttribute="bottom" constant="25" id="AiO-Kd-D4l"/>
+                            <constraint firstAttribute="trailing" secondItem="TB9-tR-n6v" secondAttribute="trailing" constant="120" id="NlZ-Wj-EuB"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,6 +59,7 @@
             <size key="customSize" width="200" height="100"/>
             <connections>
                 <outlet property="methodImage" destination="TtW-gU-UNL" id="9hw-jJ-WRF"/>
+                <outlet property="methodLabel" destination="TB9-tR-n6v" id="VFX-Si-DN7"/>
             </connections>
             <point key="canvasLocation" x="246.37681159420291" y="110.49107142857143"/>
         </collectionViewCell>
