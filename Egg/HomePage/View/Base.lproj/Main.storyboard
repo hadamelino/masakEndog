@@ -65,7 +65,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="300" height="191"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample_image" translatesAutoresizingMaskIntoConstraints="NO" id="GS5-Wh-CIN">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner1" translatesAutoresizingMaskIntoConstraints="NO" id="GS5-Wh-CIN">
                                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="191"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
@@ -142,7 +142,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="170" height="211"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_image" translatesAutoresizingMaskIntoConstraints="NO" id="exo-bF-nvA">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado egg toast" translatesAutoresizingMaskIntoConstraints="NO" id="exo-bF-nvA">
                                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="211"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egg Avo Toast" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0o-0u-mco">
@@ -272,9 +272,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="avocado egg toast" width="3976" height="4055"/>
+        <image name="banner1" width="3508" height="2480"/>
         <image name="fork.knife" catalog="system" width="92" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="sample_image" width="3542" height="2947"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
