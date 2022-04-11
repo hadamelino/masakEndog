@@ -9,7 +9,6 @@ import UIKit
 
 class MethodsCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var methodImageContainer: UIView!
     @IBOutlet weak var methodImage: UIImageView!
     
     override func awakeFromNib() {

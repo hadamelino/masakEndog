@@ -17,34 +17,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-RM-AwB">
-                        <rect key="frame" x="25" y="12" width="150" height="76"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-x4-NzV">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-1T-L1T">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="76"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-gU-UNL">
+                                <rect key="frame" x="0.0" y="7" width="200" height="86"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gNA-1T-L1T" secondAttribute="trailing" id="2Yh-SY-dl5"/>
-                            <constraint firstItem="gNA-1T-L1T" firstAttribute="leading" secondItem="w5r-RM-AwB" secondAttribute="leading" id="Pmy-nh-FQ3"/>
-                            <constraint firstAttribute="bottom" secondItem="gNA-1T-L1T" secondAttribute="bottom" id="iCD-7y-DW5"/>
-                            <constraint firstItem="gNA-1T-L1T" firstAttribute="top" secondItem="w5r-RM-AwB" secondAttribute="top" id="ptR-oS-pHh"/>
+                            <constraint firstItem="TtW-gU-UNL" firstAttribute="top" secondItem="Qfp-x4-NzV" secondAttribute="top" constant="7" id="3fd-i5-18m"/>
+                            <constraint firstAttribute="trailing" secondItem="TtW-gU-UNL" secondAttribute="trailing" id="JyY-mI-bQ8"/>
+                            <constraint firstItem="TtW-gU-UNL" firstAttribute="leading" secondItem="Qfp-x4-NzV" secondAttribute="leading" id="KqC-1d-z27"/>
+                            <constraint firstAttribute="bottom" secondItem="TtW-gU-UNL" secondAttribute="bottom" constant="7" id="vOJ-7f-Jm4"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="w5r-RM-AwB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="GyR-4K-KbB"/>
-                <constraint firstAttribute="bottom" secondItem="w5r-RM-AwB" secondAttribute="bottom" constant="12" id="Ma9-X1-oFk"/>
-                <constraint firstItem="w5r-RM-AwB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="Sry-uh-SVv"/>
-                <constraint firstAttribute="trailing" secondItem="w5r-RM-AwB" secondAttribute="trailing" constant="25" id="poM-re-THY"/>
+                <constraint firstAttribute="bottom" secondItem="Qfp-x4-NzV" secondAttribute="bottom" id="5Mr-LT-kvl"/>
+                <constraint firstItem="Qfp-x4-NzV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XCb-OB-mgB"/>
+                <constraint firstAttribute="trailing" secondItem="Qfp-x4-NzV" secondAttribute="trailing" id="l79-EM-bor"/>
+                <constraint firstItem="Qfp-x4-NzV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rWG-DM-yek"/>
             </constraints>
             <size key="customSize" width="200" height="100"/>
             <connections>
-                <outlet property="methodImage" destination="gNA-1T-L1T" id="U6w-Y4-EOB"/>
-                <outlet property="methodImageContainer" destination="w5r-RM-AwB" id="Eqe-q1-9NV"/>
+                <outlet property="methodImage" destination="TtW-gU-UNL" id="9hw-jJ-WRF"/>
             </connections>
             <point key="canvasLocation" x="246.37681159420291" y="110.49107142857143"/>
         </collectionViewCell>
