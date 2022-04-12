@@ -37,30 +37,51 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     var bannerImage = "sample_image"
     var bannerText = "Eggs of the day"
+    
+    var methodTypeImage = ["water", "oil", "heat"]
+    var methodTypeName = ["Water-based", "Oil-based", "Heat-based"]
+    
+    var recipeName = ["Egg Avo Toast", "Egg & Potato"]
+    var recipeImage = ["avocado egg toast", "egg potato"]
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        if collectionView.tag == 0 {
+           return 3
+            
+        } else if collectionView.tag == 1 {
+            return 2
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
-        cell.bannerImage.image = UIImage(named: bannerImage)
-        cell.bannerImage.layer.cornerRadius = 15
-        cell.bannerText.text = bannerText
-        return cell
+        
+        if collectionView == self.collectionView {
+            let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
+            bannerCell.bannerImage.image = UIImage(named: "banner1")
+            bannerCell.bannerImage.layer.cornerRadius = 15
+            return bannerCell
+            
+        } else if collectionView == self.recipeCollectionView {
+            let recipeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! RecipeCollectionViewCell
+            recipeCell.recipeImage.image = UIImage(named: recipeImage[indexPath.row])
+            recipeCell.recipeImage.layer.cornerRadius = 15
+            recipeCell.recipeName.text = recipeName[indexPath.row]
+            return recipeCell
+        }
+        return UICollectionViewCell()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return methodTypeName.count
     }
     
-    
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "methodCell", for: indexPath) as! MethodTableViewCell
-        cell.methodImage.image = UIImage(named: bannerImage)
+        cell.methodImage.image = UIImage(named: methodTypeImage[indexPath.row])
         cell.methodImage.layer.cornerRadius = 15
-        cell.methodLabel.text = bannerText
+        cell.methodLabel.text = methodTypeName[indexPath.row]
         return cell
     }
     
