@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func skipButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToHomepage", sender: self)
     }
     /*
     // MARK: - Navigation

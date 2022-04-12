@@ -93,11 +93,22 @@ Save your Favorite Recipes</string>
                     <connections>
                         <outlet property="signInBtn" destination="yXh-PV-Ttc" id="C5e-GQ-Vx0"/>
                         <outlet property="signUpBtn" destination="BF0-43-cpJ" id="iHC-jV-aaf"/>
+                        <segue destination="Dqa-Ke-7sL" kind="presentation" identifier="goToHomepage" modalPresentationStyle="fullScreen" id="KSY-fl-Yrk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="42.028985507246382" y="47.282608695652179"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="wLR-UR-8iJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Dqa-Ke-7sL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Eys-Om-hD1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FV2-PX-IJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="47"/>
         </scene>
     </scenes>
     <resources>
