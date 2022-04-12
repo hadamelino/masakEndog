@@ -73,7 +73,7 @@
                     <navigationItem key="navigationItem" id="mm1-VQ-rFs"/>
                     <connections>
                         <outlet property="methodsCollection" destination="JGf-DD-3fe" id="UP1-lf-G8n"/>
-                        <segue destination="QVY-Ag-qMR" kind="presentation" identifier="goToDetail" id="Qjp-6F-WyR"/>
+                        <segue destination="QVY-Ag-qMR" kind="presentation" identifier="goToDetail" modalPresentationStyle="fullScreen" id="Qjp-6F-WyR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
