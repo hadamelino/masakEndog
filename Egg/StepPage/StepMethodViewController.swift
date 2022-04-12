@@ -17,6 +17,7 @@ class StepMethodViewController: UIViewController {
     
     var method = sunnySideUpMethod()
     var count = 0
+    private var segueIdentifier = "congratsFromRecipe"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +42,17 @@ class StepMethodViewController: UIViewController {
                 nextStepBtn.setTitle("Finish Cook", for: .normal)
             }
         } else {
-            performSegue(withIdentifier: "homepageSegue", sender: self)
+            performSegue(withIdentifier: segueIdentifier, sender: self)
         }
         count += 1
-
-        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! CongratulationViewController
+        vc.segueIdentifier = self.segueIdentifier
+    }
+    
+
 }
 
 
