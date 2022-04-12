@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Hi, Fadly!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,28 +23,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBk-1C-jYS">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1060"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Apple!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwx-JN-cGy">
-                                                <rect key="frame" x="80" y="17" width="103.5" height="30"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrE-Zu-o6h">
-                                                <rect key="frame" x="280" y="14" width="51" height="37"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2W-dP-gTk">
-                                                <rect key="frame" x="343" y="14" width="51" height="37"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
-                                                </buttonConfiguration>
-                                            </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="70G-2O-bzd">
                                                 <rect key="frame" x="20" y="67" width="374" height="252"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -100,14 +78,6 @@
                                                     <constraint firstItem="EDO-PF-AMT" firstAttribute="leading" secondItem="9Om-H6-C9z" secondAttribute="leading" constant="20" symbolic="YES" id="wb5-p6-cz2"/>
                                                 </constraints>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X98-nG-bW9">
-                                                <rect key="frame" x="20" y="15.5" width="38" height="34"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="38" id="oU9-wO-JBq"/>
-                                                    <constraint firstAttribute="height" constant="37" id="vVe-QF-Hin"/>
-                                                </constraints>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71h-ep-FkQ">
                                                 <rect key="frame" x="20" y="701" width="233" height="23"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
@@ -174,15 +144,12 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="70G-2O-bzd" firstAttribute="top" secondItem="cBk-1C-jYS" secondAttribute="top" constant="67" id="1g6-fE-gCN"/>
-                                            <constraint firstAttribute="trailing" secondItem="O2W-dP-gTk" secondAttribute="trailing" constant="20" symbolic="YES" id="7Gz-jL-Ace"/>
                                             <constraint firstItem="sSQ-rI-v1i" firstAttribute="leading" secondItem="p1V-po-Hwy" secondAttribute="trailing" constant="37" id="8Q5-9o-DGR"/>
                                             <constraint firstItem="cxw-Vu-YFs" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="20" symbolic="YES" id="9gr-iG-RPC"/>
                                             <constraint firstAttribute="trailing" secondItem="9Om-H6-C9z" secondAttribute="trailing" id="E9k-it-iNY"/>
-                                            <constraint firstItem="xrE-Zu-o6h" firstAttribute="top" secondItem="cBk-1C-jYS" secondAttribute="top" constant="14" id="FDN-H1-wFR"/>
                                             <constraint firstItem="70G-2O-bzd" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="20" symbolic="YES" id="Gvt-By-efb"/>
                                             <constraint firstItem="sSQ-rI-v1i" firstAttribute="top" secondItem="9Om-H6-C9z" secondAttribute="bottom" constant="32" id="HBg-w4-RbO"/>
                                             <constraint firstAttribute="bottom" secondItem="cxw-Vu-YFs" secondAttribute="bottom" constant="28" id="IxJ-sq-m7o"/>
-                                            <constraint firstItem="X98-nG-bW9" firstAttribute="top" secondItem="cBk-1C-jYS" secondAttribute="top" constant="14" id="LpH-B5-qfY"/>
                                             <constraint firstAttribute="height" constant="1060" id="LvU-76-Pmc"/>
                                             <constraint firstItem="cxw-Vu-YFs" firstAttribute="centerX" secondItem="cBk-1C-jYS" secondAttribute="centerX" id="MHu-FI-FL8"/>
                                             <constraint firstItem="9Om-H6-C9z" firstAttribute="top" secondItem="Q2m-Bx-Jlk" secondAttribute="bottom" constant="8" id="Mnt-PF-UEf"/>
@@ -191,21 +158,15 @@
                                             <constraint firstAttribute="trailing" secondItem="71h-ep-FkQ" secondAttribute="trailing" constant="161" id="Nsq-ld-hUk"/>
                                             <constraint firstItem="Q2m-Bx-Jlk" firstAttribute="top" secondItem="70G-2O-bzd" secondAttribute="bottom" constant="-13" id="P99-tJ-SoY"/>
                                             <constraint firstAttribute="trailing" secondItem="Q2m-Bx-Jlk" secondAttribute="trailing" constant="157" id="T4E-Td-z53"/>
-                                            <constraint firstItem="cwx-JN-cGy" firstAttribute="top" secondItem="cBk-1C-jYS" secondAttribute="top" constant="17" id="U53-D9-9e0"/>
                                             <constraint firstAttribute="trailing" secondItem="70G-2O-bzd" secondAttribute="trailing" constant="20" symbolic="YES" id="Ypk-3S-bNs"/>
                                             <constraint firstItem="71h-ep-FkQ" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="20" id="abg-z9-gt3"/>
-                                            <constraint firstItem="O2W-dP-gTk" firstAttribute="leading" secondItem="xrE-Zu-o6h" secondAttribute="trailing" constant="12" id="ck9-dm-3dm"/>
                                             <constraint firstItem="9Om-H6-C9z" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" id="ebn-6r-0Pj"/>
                                             <constraint firstItem="cxw-Vu-YFs" firstAttribute="top" secondItem="sSQ-rI-v1i" secondAttribute="bottom" constant="8" id="fmP-ct-fFc"/>
                                             <constraint firstItem="p1V-po-Hwy" firstAttribute="top" secondItem="71h-ep-FkQ" secondAttribute="bottom" constant="10" id="hgq-dw-IK7"/>
-                                            <constraint firstItem="cwx-JN-cGy" firstAttribute="leading" secondItem="X98-nG-bW9" secondAttribute="trailing" constant="22" id="iOM-lR-igt"/>
                                             <constraint firstAttribute="trailing" secondItem="cxw-Vu-YFs" secondAttribute="trailing" constant="20" symbolic="YES" id="kzA-QR-Dg0"/>
                                             <constraint firstItem="71h-ep-FkQ" firstAttribute="top" secondItem="9Om-H6-C9z" secondAttribute="bottom" constant="8" id="msV-8i-qT5"/>
                                             <constraint firstItem="p1V-po-Hwy" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="20" id="pkm-Qj-eIx"/>
                                             <constraint firstItem="Q2m-Bx-Jlk" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="24" id="qoN-kc-WOF"/>
-                                            <constraint firstItem="xrE-Zu-o6h" firstAttribute="leading" secondItem="cwx-JN-cGy" secondAttribute="trailing" constant="96.5" id="xop-RL-QiQ"/>
-                                            <constraint firstItem="X98-nG-bW9" firstAttribute="leading" secondItem="cBk-1C-jYS" secondAttribute="leading" constant="20" symbolic="YES" id="zWr-2V-P8q"/>
-                                            <constraint firstItem="O2W-dP-gTk" firstAttribute="top" secondItem="cBk-1C-jYS" secondAttribute="top" constant="14" id="zZd-Tt-9IY"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -227,7 +188,19 @@
                             <constraint firstItem="Yoa-2n-Sqv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rag-9d-7Ms"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9Hs-Im-6kC"/>
+                    <navigationItem key="navigationItem" title="Hi, Fadly!" id="9Hs-Im-6kC">
+                        <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" id="RFk-Gw-nhk">
+                            <color key="tintColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="ellipsis" catalog="system" id="JuZ-rK-ENK">
+                                <color key="tintColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="bookmark" catalog="system" id="QoP-pF-rch">
+                                <color key="tintColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1060"/>
                     <connections>
                         <outlet property="collectionView" destination="70G-2O-bzd" id="nye-QV-dR7"/>
@@ -293,12 +266,10 @@
     <resources>
         <image name="Avocado egg toast" width="3976" height="4055"/>
         <image name="banner1" width="3508" height="2480"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="fork.knife" catalog="system" width="92" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

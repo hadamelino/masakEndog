@@ -29,7 +29,8 @@ class EggMethodsController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Oil-Based"
+        navigationController?.title = "Oil-Based"
+        
         methodsCollection.register(UINib(nibName: "MethodsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MethodsCollectionViewCell")
         
     }
