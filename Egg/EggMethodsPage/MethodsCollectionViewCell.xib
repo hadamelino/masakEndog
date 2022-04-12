@@ -60,6 +60,7 @@
             <connections>
                 <outlet property="methodImage" destination="TtW-gU-UNL" id="9hw-jJ-WRF"/>
                 <outlet property="methodLabel" destination="TB9-tR-n6v" id="VFX-Si-DN7"/>
+                <outlet property="methodView" destination="Qfp-x4-NzV" id="3Go-SF-e7e"/>
             </connections>
             <point key="canvasLocation" x="246.37681159420291" y="110.49107142857143"/>
         </collectionViewCell>

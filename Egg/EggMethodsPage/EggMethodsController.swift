@@ -18,7 +18,7 @@ class EggMethodsController: UIViewController {
         let darkShadow = CALayer()
         darkShadow.cornerRadius     = 15
         darkShadow.shadowColor      = UIColor.red.cgColor
-        darkShadow.shadowOffset     = .init(width: 5, height: 1)
+        darkShadow.shadowOffset     = .init(width: 1, height: 1)
         darkShadow.shadowOpacity    = 1
         darkShadow.shadowRadius     = 3
         return darkShadow
@@ -46,7 +46,8 @@ extension EggMethodsController:UICollectionViewDataSource, UICollectionViewDeleg
         cell.methodImage.image  = self.methodImage[indexPath.row]
         cell.methodLabel.text   = self.methodLabel[indexPath.row]
         cell.methodImage.layer.cornerRadius     = 15
-        cell.methodImage.layer.addSublayer(darkShadow)
+        cell.methodView.layer.cornerRadius      = 15
+        cell.methodView.layer.addSublayer(darkShadow)
         return cell
     }
     

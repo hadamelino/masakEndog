@@ -9,6 +9,7 @@ import UIKit
 
 class MethodsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var methodView: UIView!
     @IBOutlet weak var methodImage: UIImageView!
     @IBOutlet weak var methodLabel: UILabel!
     
