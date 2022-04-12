@@ -60,7 +60,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let cell = tableView.dequeueReusableCell(withIdentifier: "methodCell", for: indexPath) as! MethodTableViewCell
         cell.methodImage.image = UIImage(named: bannerImage)
         cell.methodImage.layer.cornerRadius = 15
-       cell.methodLabel.text = bannerText
+        cell.methodLabel.text = bannerText
         return cell
     }
     
