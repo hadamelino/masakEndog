@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mCa-BT-pjl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -12,13 +12,13 @@
         <!--Step Method View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="StepMethodViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fromMethod" id="Y6W-OH-hqX" customClass="StepMethodViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="432"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="432"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="cXU-E0-L3m"/>
                                     <constraint firstAttribute="height" constant="432" id="egS-OJ-3OB"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny Side Up" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-N7-M1B">
-                                <rect key="frame" x="20" y="539" width="212" height="31.5"/>
+                                <rect key="frame" x="20" y="495" width="212" height="31.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="FPF-LY-SKz"/>
                                 </constraints>
@@ -49,14 +49,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-Yg-gSh">
-                                <rect key="frame" x="45" y="590.5" width="324" height="95.5"/>
+                                <rect key="frame" x="45" y="546.5" width="324" height="95.5"/>
                                 <string key="text">Cover with a tight lit and cook, uninteruupted, until the whites are completely set but the yolks are still runny for 2 to 2.5 minutes.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-8v-17Y">
-                                <rect key="frame" x="349" y="543" width="45" height="22"/>
+                                <rect key="frame" x="349" y="499" width="45" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -93,33 +93,12 @@
             </objects>
             <point key="canvasLocation" x="898.55072463768124" y="69.642857142857139"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bRg-Sw-dYo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mCa-BT-pjl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dDR-sx-hoV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z7d-Rf-QCm">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="IWb-vF-G3H"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aA5-C4-HiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17.39130434782609" y="51.5625"/>
-        </scene>
         <!--Sunny Side Up-->
         <scene sceneID="7yk-cn-acN">
             <objects>
                 <viewController id="CgB-VX-QG8" customClass="CongratulationViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b6p-2s-Wa9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1172"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="b6p-2s-Wa9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1118"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot7-sm-WiJ">
@@ -516,8 +495,8 @@
         <scene sceneID="qrI-wb-zIQ">
             <objects>
                 <viewController id="RO0-C4-6MP" customClass="CongratulationViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EAw-0j-C3m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="845"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="EAw-0j-C3m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="791"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-Tw-5Hu">

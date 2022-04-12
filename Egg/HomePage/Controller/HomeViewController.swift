@@ -85,6 +85,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            performSegue(withIdentifier: "goToMethod", sender: self)
+        }
+    }
+    
 
 }
 
