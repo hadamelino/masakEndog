@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mCa-BT-pjl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Step Method View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="StepMethodViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
+                                <rect key="frame" x="12" y="88" width="390" height="463"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="390" id="cXU-E0-L3m"/>
+                                    <constraint firstAttribute="height" constant="463" id="egS-OJ-3OB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny Side Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-N7-M1B">
+                                <rect key="frame" x="20" y="571" width="170" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Sx7-Pd-Yjq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-Yg-gSh">
+                                <rect key="frame" x="45" y="622" width="324" height="95.5"/>
+                                <string key="text">Cover with a tight lit and cook, uninteruupted, until the whites are completely set but the yolks are still runny for 2 to 2.5 minutes.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-8v-17Y">
+                                <rect key="frame" x="357" y="576" width="45" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-wi-lql">
+                                <rect key="frame" x="130.5" y="805" width="153" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2dG-8b-APP"/>
+                                    <constraint firstAttribute="width" constant="153" id="FUe-5y-6gZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next Step">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.99607843137254903" green="0.67450980392156867" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextStepPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="658-bB-bGU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HjI-Yg-gSh" secondAttribute="trailing" constant="45" id="Fpw-10-nIV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DzX-8v-17Y" secondAttribute="trailing" constant="12" id="JDU-F4-kVi"/>
+                            <constraint firstItem="F7w-US-rNi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="NAc-ch-5UR"/>
+                            <constraint firstItem="KzX-N7-M1B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZWR-tA-eNa"/>
+                            <constraint firstItem="Tpg-wi-lql" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bYj-2O-f9r"/>
+                            <constraint firstItem="DzX-8v-17Y" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="25" id="ihq-Ah-JH6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Tpg-wi-lql" secondAttribute="bottom" constant="13" id="l9k-5E-qyP"/>
+                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="ncA-5M-MgP"/>
+                            <constraint firstItem="KzX-N7-M1B" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="20" id="pkr-xJ-sc5"/>
+                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="top" secondItem="KzX-N7-M1B" secondAttribute="bottom" constant="19" id="qHd-k5-498"/>
+                            <constraint firstItem="F7w-US-rNi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wZn-Zc-emS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="85N-mf-HIX"/>
+                    <connections>
+                        <outlet property="detailStepLabel" destination="HjI-Yg-gSh" id="8b3-1Q-oVr"/>
+                        <outlet property="methodTitle" destination="KzX-N7-M1B" id="uSh-YE-Xkm"/>
+                        <outlet property="nextStepBtn" destination="Tpg-wi-lql" id="rlD-VE-Zx2"/>
+                        <outlet property="numberOfStepLabel" destination="DzX-8v-17Y" id="BNQ-od-cpr"/>
+                        <outlet property="stepImage" destination="F7w-US-rNi" id="eB1-5N-8g8"/>
+                        <segue destination="4MM-39-kje" kind="show" identifier="homepageSegue" id="DTd-WB-Sh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="51.5625"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="aj2-al-egF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="4MM-39-kje" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MQE-Cy-vF2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQY-tO-4xp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="40"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bRg-Sw-dYo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mCa-BT-pjl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dDR-sx-hoV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z7d-Rf-QCm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="IWb-vF-G3H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA5-C4-HiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oil" width="1100" height="734"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
