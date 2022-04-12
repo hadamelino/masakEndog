@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-wW-g6C">
+                                <rect key="frame" x="51" y="353.33333333333331" width="288" height="50.333333333333314"/>
+                                <string key="text">Log in or Create an Account to
+Save your Favorite Recipes</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-tp-V15">
+                                <rect key="frame" x="20" y="433.66666666666669" width="350" height="120.00000000000006"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXh-PV-Ttc">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="54"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="vB9-RR-Fyb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=" Sign in with Apple " image="applelogo" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lpt-nF-3La"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF0-43-cpJ">
+                                        <rect key="frame" x="0.0" y="66" width="350" height="54"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Other sign up options"/>
+                                        <connections>
+                                            <action selector="signUpButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="67H-dc-owp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1n-LZ-K8W">
+                                <rect key="frame" x="20" y="746.66666666666663" width="350" height="33.333333333333371"/>
+                                <color key="tintColor" red="0.99607843137254903" green="0.67450980392156867" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip for now">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hHd-GZ-VtO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memoji chef" translatesAutoresizingMaskIntoConstraints="NO" id="TU0-2j-7mN">
+                                <rect key="frame" x="96" y="103.00000000000001" width="199" height="230.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TU0-2j-7mN" secondAttribute="height" multiplier="223:258" id="Db3-VL-4pW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Ze-tp-V15" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="345-qg-obB"/>
+                            <constraint firstItem="TU0-2j-7mN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="96" id="EDU-sm-28k"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b1n-LZ-K8W" secondAttribute="trailing" constant="20" id="KDk-9m-N8n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TU0-2j-7mN" secondAttribute="trailing" constant="95" id="Pd5-J1-xUG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="b1n-LZ-K8W" secondAttribute="bottom" constant="30" id="QK4-bE-GqT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Ze-tp-V15" secondAttribute="trailing" constant="20" id="QYZ-qX-LOB"/>
+                            <constraint firstItem="yyU-wW-g6C" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YpO-Di-Vxf"/>
+                            <constraint firstItem="yyU-wW-g6C" firstAttribute="top" secondItem="TU0-2j-7mN" secondAttribute="bottom" constant="20" id="c2f-7C-fn3"/>
+                            <constraint firstItem="b1n-LZ-K8W" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="eNb-s0-W0k"/>
+                            <constraint firstItem="3Ze-tp-V15" firstAttribute="top" secondItem="yyU-wW-g6C" secondAttribute="bottom" constant="30" id="tfG-t6-Yn6"/>
+                            <constraint firstItem="TU0-2j-7mN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="59" id="xOy-dl-E6k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInBtn" destination="yXh-PV-Ttc" id="C5e-GQ-Vx0"/>
+                        <outlet property="signUpBtn" destination="BF0-43-cpJ" id="iHC-jV-aaf"/>
+                        <segue destination="Dqa-Ke-7sL" kind="presentation" identifier="goToHomepage" modalPresentationStyle="fullScreen" id="KSY-fl-Yrk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.028985507246382" y="47.282608695652179"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="wLR-UR-8iJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Dqa-Ke-7sL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Eys-Om-hD1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FV2-PX-IJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="memoji chef" width="887" height="481"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
