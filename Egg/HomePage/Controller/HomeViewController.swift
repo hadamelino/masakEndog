@@ -42,7 +42,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var methodTypeName = ["Water-based", "Oil-based", "Heat-based"]
     
     var recipeName = ["Egg Avo Toast", "Egg & Potato"]
-    var recipeImage = ["avocado egg toast", "egg potato"]
+    var recipeImage = ["Avocado egg toast", "egg potato"]
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {

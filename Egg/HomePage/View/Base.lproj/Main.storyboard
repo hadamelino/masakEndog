@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cook-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,34 +227,34 @@
                             <constraint firstItem="Yoa-2n-Sqv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rag-9d-7Ms"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cook" image="fork.knife" catalog="system" id="a1d-TN-Rt3"/>
+                    <navigationItem key="navigationItem" id="9Hs-Im-6kC"/>
                     <size key="freeformSize" width="414" height="1060"/>
                     <connections>
                         <outlet property="collectionView" destination="70G-2O-bzd" id="nye-QV-dR7"/>
                         <outlet property="greyBackground" destination="9Om-H6-C9z" id="v6b-kO-816"/>
                         <outlet property="methodTableView" destination="EDO-PF-AMT" id="fiY-j4-wrB"/>
                         <outlet property="recipeCollectionView" destination="cxw-Vu-YFs" id="Dpl-aw-swr"/>
-                        <segue destination="Lp7-8F-PM8" kind="show" id="dci-1Y-Ksn"/>
+                        <segue destination="Lp7-8F-PM8" kind="show" identifier="goToMethod" id="dci-1Y-Ksn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1855.072463768116" y="83.705357142857139"/>
         </scene>
-        <!--EggMethods-->
+        <!--fromHomepage-->
         <scene sceneID="xPe-o2-tWY">
             <objects>
-                <viewControllerPlaceholder storyboardName="EggMethods" id="Lp7-8F-PM8" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="EggMethods" referencedIdentifier="fromHomepage" id="Lp7-8F-PM8" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Hc6-so-XPT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsr-li-KSy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1615" y="84"/>
+            <point key="canvasLocation" x="2524.6376811594205" y="83.705357142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jvV-CW-l9O">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ylj-Pq-6dV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="fromLogin" automaticallyAdjustsScrollViewInsets="NO" id="ylj-Pq-6dV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Op5-i4-4dk">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -263,12 +263,31 @@
                         <color key="selectedImageTintColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="v2L-m5-F7D"/>
+                        <segue destination="Yxm-Nm-LgM" kind="relationship" relationship="viewControllers" id="v2L-m5-F7D"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd9-7H-pxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+        <!--Cook-->
+        <scene sceneID="2u6-SY-KB6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yxm-Nm-LgM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cook" image="fork.knife" catalog="system" id="a1d-TN-Rt3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u66-qM-d55">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ht4-15-dPo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoP-LL-bXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>

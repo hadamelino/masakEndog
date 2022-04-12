@@ -100,10 +100,10 @@ Save your Favorite Recipes</string>
             </objects>
             <point key="canvasLocation" x="42.028985507246382" y="47.282608695652179"/>
         </scene>
-        <!--Main-->
+        <!--fromLogin-->
         <scene sceneID="wLR-UR-8iJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="Dqa-Ke-7sL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="fromLogin" id="Dqa-Ke-7sL" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Eys-Om-hD1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FV2-PX-IJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
