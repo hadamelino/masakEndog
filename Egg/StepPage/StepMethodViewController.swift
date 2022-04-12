@@ -15,36 +15,58 @@ class StepMethodViewController: UIViewController {
     @IBOutlet weak var detailStepLabel: UILabel!
     @IBOutlet weak var nextStepBtn: UIButton!
     
-    var method = sunnySideUpMethod()
+    // Edit this when linking all together
+    var stepData: StepData?
+    var previousPage = "recipe"
+    // =========
+    
     var count = 0
     private var segueIdentifier = "congratsFromRecipe"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        stepImage.image = UIImage(named: (method.imageStep![0]))
-        methodTitle.text = method.methodName
-        numberOfStepLabel.text = "1 of \(method.stepText!.count)"
-        detailStepLabel.text = method.stepText![0]
-        count += 1
+        if previousPage == "method" {
+            stepData = sunnySideUpMethod()
+        } else {
+            stepData = eggAvocadoToast()
+        }
+        
+        if let data = stepData {
+            stepImage.image = UIImage(named: (data.stepImage[0]))
+            methodTitle.text = data.stepTitle
+            numberOfStepLabel.text = "1 of \(data.stepText.count)"
+            detailStepLabel.text = data.stepText[0]
+            count += 1
+        } else {
+            print("Failed to fetch data")
+            return
+        }
+        
     }
     
     @IBAction func nextStepPressed(_ sender: Any) {
         
-        if count < method.stepText!.count {
-            stepImage.fadeTransition(0.5, .push, .fromRight)
-            detailStepLabel.fadeTransition(0.2, .fade, .fromBottom)
-            stepImage.image = UIImage(named: (method.imageStep![count]))
-            methodTitle.text = method.methodName
-            numberOfStepLabel.text = "\(count + 1) of \(method.stepText!.count)"
-            detailStepLabel.text = method.stepText![count]
-            if count == method.stepText!.count - 1 {
-                nextStepBtn.setTitle("Finish Cook", for: .normal)
+        if let data = stepData {
+            if count < data.stepText.count {
+                stepImage.fadeTransition(0.5, .push, .fromRight)
+                detailStepLabel.fadeTransition(0.2, .fade, .fromBottom)
+                stepImage.image = UIImage(named: (data.stepImage[count]))
+                methodTitle.text = data.stepTitle
+                numberOfStepLabel.text = "\(count + 1) of \(data.stepText.count)"
+                detailStepLabel.text = data.stepText[count]
+                if count == data.stepText.count - 1 {
+                    nextStepBtn.setTitle("Finish Cook", for: .normal)
+                }
+            } else {
+                performSegue(withIdentifier: segueIdentifier, sender: self)
             }
+            count += 1
         } else {
-            performSegue(withIdentifier: segueIdentifier, sender: self)
+            print("Failed to fetch data")
+            return
         }
-        count += 1
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

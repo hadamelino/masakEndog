@@ -11,5 +11,4 @@ class CongratulationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentName: UILabel!
     
-    
 }

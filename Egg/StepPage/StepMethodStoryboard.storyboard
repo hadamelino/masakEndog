@@ -17,35 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
-                                <rect key="frame" x="20" y="88" width="374" height="463"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oil" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-US-rNi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="432"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="cXU-E0-L3m"/>
-                                    <constraint firstAttribute="height" constant="463" id="egS-OJ-3OB"/>
+                                    <constraint firstAttribute="width" constant="414" id="cXU-E0-L3m"/>
+                                    <constraint firstAttribute="height" constant="432" id="egS-OJ-3OB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny Side Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-N7-M1B">
-                                <rect key="frame" x="20" y="571" width="170" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="Sx7-Pd-Yjq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-Yg-gSh">
-                                <rect key="frame" x="45" y="622" width="324" height="95.5"/>
-                                <string key="text">Cover with a tight lit and cook, uninteruupted, until the whites are completely set but the yolks are still runny for 2 to 2.5 minutes.</string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-8v-17Y">
-                                <rect key="frame" x="357" y="576" width="45" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-wi-lql">
                                 <rect key="frame" x="130.5" y="805" width="153" height="44"/>
                                 <constraints>
@@ -61,20 +39,42 @@
                                     <action selector="nextStepPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="658-bB-bGU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny Side Up" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-N7-M1B">
+                                <rect key="frame" x="20" y="539" width="212" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="FPF-LY-SKz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-Yg-gSh">
+                                <rect key="frame" x="45" y="590.5" width="324" height="95.5"/>
+                                <string key="text">Cover with a tight lit and cook, uninteruupted, until the whites are completely set but the yolks are still runny for 2 to 2.5 minutes.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-8v-17Y">
+                                <rect key="frame" x="349" y="543" width="45" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HjI-Yg-gSh" secondAttribute="trailing" constant="45" id="Fpw-10-nIV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DzX-8v-17Y" secondAttribute="trailing" constant="12" id="JDU-F4-kVi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HjI-Yg-gSh" secondAttribute="trailing" constant="45" id="7gN-pn-5dZ"/>
+                            <constraint firstItem="KzX-N7-M1B" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="19" id="FfY-aN-4Ou"/>
                             <constraint firstItem="F7w-US-rNi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="NAc-ch-5UR"/>
-                            <constraint firstItem="KzX-N7-M1B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZWR-tA-eNa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DzX-8v-17Y" secondAttribute="trailing" constant="20" id="Nzz-1N-1ca"/>
                             <constraint firstItem="Tpg-wi-lql" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bYj-2O-f9r"/>
-                            <constraint firstItem="DzX-8v-17Y" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="25" id="ihq-Ah-JH6"/>
+                            <constraint firstItem="DzX-8v-17Y" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="23" id="hOT-7N-eaB"/>
+                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="top" secondItem="KzX-N7-M1B" secondAttribute="bottom" constant="20" id="iBX-JJ-VId"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Tpg-wi-lql" secondAttribute="bottom" constant="13" id="l9k-5E-qyP"/>
-                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="ncA-5M-MgP"/>
-                            <constraint firstItem="KzX-N7-M1B" firstAttribute="top" secondItem="F7w-US-rNi" secondAttribute="bottom" constant="20" id="pkr-xJ-sc5"/>
-                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="top" secondItem="KzX-N7-M1B" secondAttribute="bottom" constant="19" id="qHd-k5-498"/>
+                            <constraint firstItem="HjI-Yg-gSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="qP0-TD-Xo1"/>
+                            <constraint firstItem="KzX-N7-M1B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wPL-xO-1GP"/>
                             <constraint firstItem="F7w-US-rNi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wZn-Zc-emS"/>
                         </constraints>
                     </view>

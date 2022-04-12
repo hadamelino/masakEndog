@@ -19,14 +19,10 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var contentVIew: UIView!
     
 
-    var recipeNameData:[String] = []
-    var recipeImageData:[String] = []
-    var methodNameData: [String] = []
-    var methodImageData: [String] = []
     var segueIdentifier:String = ""
-    
-    
-    
+    var recipeData = getRecipeData()
+    var methodData = getMethodData()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,14 +61,14 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if segueIdentifier == "congratsFromRecipe" {
             if collectionView.tag == 0 {
-                return recipeNameData.count
+                return recipeData.dataName.count
                 
             } else if collectionView.tag == 1 {
-                return methodNameData.count
+                return methodData.dataName.count
             }
         } else {
 
-            return recipeNameData.count
+            return recipeData.dataName.count
             
         }
         return 0
@@ -84,23 +80,23 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
             if collectionView.tag == 0 {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
-                cell.contentName.text = recipeNameData[indexPath.row]
-                cell.contentImage.image = UIImage(named: recipeImageData[indexPath.row])
+                cell.contentName.text = recipeData.dataName[indexPath.row]
+                cell.contentImage.image = UIImage(named: recipeData.dataImage[indexPath.row])
                 return cell
                 
             } else if collectionView.tag == 1 {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "methodCell", for: indexPath) as! CongratulationCollectionViewCell
-                cell.contentName.text = methodNameData[indexPath.row]
-                cell.contentImage.image = UIImage(named: methodImageData[indexPath.row])
+                cell.contentName.text = methodData.dataName[indexPath.row]
+                cell.contentImage.image = UIImage(named: methodData.dataImage[indexPath.row])
                 return cell
                 
             }
         } else {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
-            cell.contentName.text = recipeNameData[indexPath.row]
-            cell.contentImage.image = UIImage(named: recipeImageData[indexPath.row])
+            cell.contentName.text = recipeData.dataName[indexPath.row]
+            cell.contentImage.image = UIImage(named: recipeData.dataImage[indexPath.row])
             return cell
             
         }
