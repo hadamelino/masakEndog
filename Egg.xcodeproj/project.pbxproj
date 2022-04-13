@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */; };
+		290BC52B2807268300A62564 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BC52A2807268200A62564 /* DetailData.swift */; };
 		2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */; };
 		2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870C27FF382E009F00B0 /* DetailPageViewController.swift */; };
 		2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */; };
+		C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */; };
+		C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */; };
+		C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4051A1227FEBE3000B284F6 /* customTableView.swift */; };
 		C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9927FC20A8005F1E18 /* AppDelegate.swift */; };
 		C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */; };
 		C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */; };
+		C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4342A9F27FC20A8005F1E18 /* Main.storyboard */; };
 		C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4342AA227FC20A8005F1E18 /* Assets.xcassets */; };
 		C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */; };
 		C4342AB127FC20A9005F1E18 /* EggTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342AB027FC20A9005F1E18 /* EggTests.swift */; };
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
-		E0E17B372802C4A9001D8FFB /* MethodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E17B332802C4A9001D8FFB /* MethodsCollectionViewCell.xib */; };
-		E0E17B382802C4A9001D8FFB /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E17B342802C4A9001D8FFB /* EggMethods.storyboard */; };
-		E0E17B392802C4A9001D8FFB /* MethodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E17B352802C4A9001D8FFB /* MethodsCollectionViewCell.swift */; };
-		E0E17B3A2802C4A9001D8FFB /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E17B362802C4A9001D8FFB /* EggMethodsController.swift */; };
+		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
+		E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069AA202800334C00195BAC /* EggMethodsController.swift */; };
+		E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069AA212800334C00195BAC /* EggMethods.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		290BC52A2807268200A62564 /* DetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
 		2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPageStoryboard.storyboard; sourceTree = "<group>"; };
 		2962870C27FF382E009F00B0 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailPageCollectionViewCell.swift; path = Egg/DetailPage/DetailPageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodTableViewCell.swift; sourceTree = "<group>"; };
+		C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodTableViewCell.xib; sourceTree = "<group>"; };
+		C4051A1227FEBE3000B284F6 /* customTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableView.swift; sourceTree = "<group>"; };
 		C4342A9627FC20A8005F1E18 /* Egg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Egg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342A9927FC20A8005F1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4342A9D27FC20A8005F1E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4342AA027FC20A8005F1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4342AA227FC20A8005F1E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4342AA527FC20A8005F1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4342AA727FC20A8005F1E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,10 +68,9 @@
 		C4342AB627FC20A9005F1E18 /* EggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E0E17B332802C4A9001D8FFB /* MethodsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodsCollectionViewCell.xib; sourceTree = "<group>"; };
-		E0E17B342802C4A9001D8FFB /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EggMethods.storyboard; sourceTree = "<group>"; };
-		E0E17B352802C4A9001D8FFB /* MethodsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodsCollectionViewCell.swift; sourceTree = "<group>"; };
-		E0E17B362802C4A9001D8FFB /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggMethodsController.swift; sourceTree = "<group>"; };
+		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E069AA202800334C00195BAC /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EggMethodsController.swift; path = Egg/View/EggMethodsController.swift; sourceTree = SOURCE_ROOT; };
+		E069AA212800334C00195BAC /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EggMethods.storyboard; path = Egg/View/EggMethods.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C4051A1C27FEF5EA00B284F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */,
+				C4051A1227FEBE3000B284F6 /* customTableView.swift */,
+				C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */,
+				C4342A9F27FC20A8005F1E18 /* Main.storyboard */,
+				C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C4342A8D27FC20A8005F1E18 = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +141,9 @@
 		C4342A9827FC20A8005F1E18 /* Egg */ = {
 			isa = PBXGroup;
 			children = (
-				E0E17B3B2802C4EC001D8FFB /* EggMethodsPage */,
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
+				C44A43A227FF45B10059BC91 /* EggMethodPage */,
 				C44A43A127FF400A0059BC91 /* HomePage */,
 				C44A43A027FF3FE80059BC91 /* DetailPage */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
@@ -154,6 +176,8 @@
 				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
 				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
 				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
+				290BC52A2807268200A62564 /* DetailData.swift */,
+				29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */,
 			);
 			path = DetailPage;
 			sourceTree = "<group>";
@@ -162,19 +186,18 @@
 			isa = PBXGroup;
 			children = (
 				C4051A1B27FEF5E000B284F6 /* Controller */,
+				C4051A1C27FEF5EA00B284F6 /* View */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
 		};
-		E0E17B3B2802C4EC001D8FFB /* EggMethodsPage */ = {
+		C44A43A227FF45B10059BC91 /* EggMethodPage */ = {
 			isa = PBXGroup;
 			children = (
-				E0E17B342802C4A9001D8FFB /* EggMethods.storyboard */,
-				E0E17B362802C4A9001D8FFB /* EggMethodsController.swift */,
-				E0E17B352802C4A9001D8FFB /* MethodsCollectionViewCell.swift */,
-				E0E17B332802C4A9001D8FFB /* MethodsCollectionViewCell.xib */,
+				E069AA212800334C00195BAC /* EggMethods.storyboard */,
+				E069AA202800334C00195BAC /* EggMethodsController.swift */,
 			);
-			path = EggMethodsPage;
+			path = EggMethodPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +304,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E17B372802C4A9001D8FFB /* MethodsCollectionViewCell.xib in Resources */,
+				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
-				E0E17B382802C4A9001D8FFB /* EggMethods.storyboard in Resources */,
+				E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */,
+				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
 				2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,13 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */,
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
-				E0E17B3A2802C4A9001D8FFB /* EggMethodsController.swift in Sources */,
-				E0E17B392802C4A9001D8FFB /* MethodsCollectionViewCell.swift in Sources */,
+				290BC52B2807268300A62564 /* DetailData.swift in Sources */,
+				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
+				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
 				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
 				2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */,
+				C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */,
+				C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +381,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C4342A9F27FC20A8005F1E18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4342AA027FC20A8005F1E18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -487,12 +523,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F3D69PH55A;
+				DEVELOPMENT_TEAM = D5XKY44W6D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = EggMethods;
+				INFOPLIST_KEY_UIMainStoryboardFile = DetailPageStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = apptelor.Egg;
+				PRODUCT_BUNDLE_IDENTIFIER = eggV1.Egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -515,12 +551,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F3D69PH55A;
+				DEVELOPMENT_TEAM = D5XKY44W6D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = EggMethods;
+				INFOPLIST_KEY_UIMainStoryboardFile = DetailPageStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,7 +564,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = apptelor.Egg;
+				PRODUCT_BUNDLE_IDENTIFIER = eggV1.Egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
