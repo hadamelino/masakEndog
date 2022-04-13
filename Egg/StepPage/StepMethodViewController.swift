@@ -17,19 +17,30 @@ class StepMethodViewController: UIViewController {
     
     // Edit this when linking all together
     var stepData: StepData?
-    var previousPage = "recipe"
+    var previousPage = "method"
     // =========
     
     var count = 0
-    private var segueIdentifier = "congratsFromRecipe"
+    private var segueIdentifier = ""
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //navigationController?.isNavigationBarHidden = true
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
         if previousPage == "method" {
             stepData = sunnySideUpMethod()
+            segueIdentifier = "congratsFromMethod"
         } else {
             stepData = eggAvocadoToast()
+            segueIdentifier = "awardsFromRecipe"
         }
         
         if let data = stepData {
@@ -37,11 +48,14 @@ class StepMethodViewController: UIViewController {
             methodTitle.text = data.stepTitle
             numberOfStepLabel.text = "1 of \(data.stepText.count)"
             detailStepLabel.text = data.stepText[0]
+            navigationController?.navigationBar.topItem?.backButtonTitle = "Back"
+            self.title = data.stepTitle
             count += 1
         } else {
             print("Failed to fetch data")
             return
         }
+        
         
     }
     
@@ -70,8 +84,16 @@ class StepMethodViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! CongratulationViewController
-        vc.segueIdentifier = self.segueIdentifier
+        
+        if segueIdentifier == "congratsFromMethod" {
+            let vc = segue.destination as! CongratulationViewController
+            vc.segueIdentifier = self.segueIdentifier
+            vc.navTitle = stepData?.stepTitle
+        } else {
+            let vc = segue.destination as! AwardsViewController
+            vc.navTitle = stepData?.stepTitle
+        }
+        
     }
     
 

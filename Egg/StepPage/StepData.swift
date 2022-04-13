@@ -16,7 +16,7 @@ struct StepData {
 
 func sunnySideUpMethod () -> StepData {
     return StepData(stepTitle: "Sunny Side Up",
-                    stepImage: ["ss step 1", "step 2", "step 3", "step 4"],
+                    stepImage: ["ss step 1", "ss step 2", "ss step 3", "ss step 4"],
                     stepText: ["Heat the oil in a medium nonstick skillet over low heat until                              slightly shimmering for about 5 minutes.",
                                "Crack an egg into a small ramekin and slowly add it to the skillet, repeat with the other egg, adding it to the other side of the skillet.",
                                "Cover with a tight lit and cook, uninteruupted, until the whites are completely set but the yolks are still runny for 2 to 2.5 minutes.",
