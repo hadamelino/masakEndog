@@ -7,74 +7,157 @@
 
 import UIKit
 
-class DetailPageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
+class DetailPageViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var SegmentedControl: UISegmentedControl!
+    @IBOutlet weak var itemsTableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var desc: UILabel!
+    
+    @IBOutlet weak var imgIcons: UIImageView!
+    @IBOutlet weak var lblIcon: UILabel!
+    @IBOutlet weak var lblBold: UILabel!
+    
+    @IBOutlet weak var imgIcons1: UIView!
+    @IBOutlet weak var lblIcon1: UILabel!
+    @IBOutlet weak var lblBold1: UILabel!
+    
+    @IBOutlet weak var step1: UILabel!
+    @IBOutlet weak var step2: UILabel!
+    @IBOutlet weak var step3: UILabel!
+    
+    @IBOutlet weak var quotes: UILabel!
+    
+    var detailData: DetailData?
+    var prevPage: String = "fromRecipe"
+    
+    var imageData: [UIImage] = []
+    var labelData: [String] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if prevPage == "fromMethod" {
+            detailData = getMethodDetail()
+            
+            detailData = getRecipeDetail()
+            
+            titleLabel.text = detailData?.labelTitle
+            desc.text = detailData?.description
+            
+            lblBold.text = detailData?.labelBoldIcons[1]
+            lblBold1.text =  detailData?.labelBoldIcons[2]
+            
+            step1.text = detailData?.steps[0]
+            step2.text = detailData?.steps[1]
+            step3.text = detailData?.steps[2]
+            
+            quotes.text = detailData?.quote
+        }
+        else {
+            detailData = getRecipeDetail()
+            
+            titleLabel.text = detailData?.labelTitle
+            desc.text = detailData?.description
+            
+            lblBold.text = detailData?.labelBoldIcons[1]
+            lblBold1.text =  detailData?.labelBoldIcons[2]
+            
+            step1.text = detailData?.steps[0]
+            step2.text = detailData?.steps[1]
+            step3.text = detailData?.steps[2]
+            
+            quotes.text = detailData?.quote
+        }
+        
+        itemsTableView.delegate = self
+        itemsTableView.dataSource = self
+        
+        if let detail = detailData {
+            imageData = detail.imageIngredients
+            labelData = detail.labelIngredients
+        }
+        else {
+            print("Failed to unwrap data!")
+        }
+        
+        
+    }
+    
+    @IBAction func goToTools(_ sender: Any) {
+        
+        if let detail = detailData {
+            switch SegmentedControl.selectedSegmentIndex
+            {
+                case 0:
+    //            print("Ingredients")
+                imageData = detail.imageIngredients
+                labelData = detail.labelIngredients
+                self.itemsTableView.reloadData()
+                
+                case 1:
+    //            print("Tools")
+                imageData = detail.imageTools
+                labelData = detail.labelTools
+                self.itemsTableView.reloadData()
+                
+                default:
+                    break
+            }
+        }
+        else {
+            print("Failed to unwrap data!")
+        }
+        
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ingredientsImage.count
+        if SegmentedControl.selectedSegmentIndex == 0 {
+//            if let detail = detailData {
+                return detailData!.imageIngredients.count
+//            }
+        }
+        else {
+//            if let detail = detailData {
+                return detailData!.imageTools.count
+//            }
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemsCell", for: indexPath) as! ItemsTableViewCell
         
-        cell.itemsImageView.image = self.ingredientsImage[indexPath.row]
-        cell.itemsLabelView.text = self.ingredientsLabel[indexPath.row]
+        if SegmentedControl.selectedSegmentIndex == 0 {
+            cell.itemsImageView.image = self.detailData?.imageIngredients[indexPath.row]
+            cell.itemsLabelView.text = self.detailData?.labelIngredients[indexPath.row]
+        }
+        else {
+            cell.itemsImageView.image = self.detailData?.imageTools[indexPath.row]
+            cell.itemsLabelView.text = self.detailData?.labelTools[indexPath.row]
+        }
+        
+        cell.selectionStyle = .none
         return cell;
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return detailPageImages.count
+        
+        return detailData!.imageTitles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DetailPageCollectionViewCell
         
-        cell.MyDetailPageImage.image = self.detailPageImages[indexPath.row]
+        cell.MyDetailPageImage.image = self.detailData?.imageTitles[indexPath.row]
         cell.MyDetailPageImage.layer.cornerRadius = 50.0
+        
         return cell
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            CGSize(width: 390, height: 302)
-        }
-    
-    @IBOutlet weak var pic1: UIImageView!
-    @IBOutlet weak var capt1: UILabel!
-    @IBOutlet weak var pic2: UIImageView!
-    @IBOutlet weak var capt2: UILabel!
-    @IBOutlet weak var SegmentedControl: UISegmentedControl!
-    @IBOutlet weak var itemsTableView: UITableView!
-    
-    var detailPageImages: [UIImage] = [UIImage(named: "steps 5")!, UIImage(named: "steps 5")!, UIImage(named: "steps 5")!]
-    
-    var ingredientsImage: [UIImage] = [UIImage(named: "egg")!, UIImage(named: "oil spoon")!]
-    
-    var ingredientsLabel: [String] = ["2 Eggs", "1 tbsp oil"]
-    
-    var toolsImages: [String] = ["", ""]
-    var toolsLabel: [String] = ["", ""]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        itemsTableView.delegate = self
-        itemsTableView.dataSource = self
+        CGSize(width: view.frame.width, height: view.frame.height / 4 + 50)
     }
-    
-    @IBAction func goToTools(_ sender: Any) {
-        switch SegmentedControl.selectedSegmentIndex
-        {
-            case 0:
-            print("Ingredients")
-            
-            case 1:
-           print("2nd page")
-            
-            default:
-                break
-        }
-    }
-    
     
     @IBAction func cookButton(_ sender: Any) {
     }

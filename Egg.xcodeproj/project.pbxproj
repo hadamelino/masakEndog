@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */; };
+		290BC52B2807268300A62564 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BC52A2807268200A62564 /* DetailData.swift */; };
 		2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */; };
 		2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870C27FF382E009F00B0 /* DetailPageViewController.swift */; };
 		2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		290BC52A2807268200A62564 /* DetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
 		2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPageStoryboard.storyboard; sourceTree = "<group>"; };
 		2962870C27FF382E009F00B0 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailPageCollectionViewCell.swift; path = Egg/DetailPage/DetailPageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -174,6 +176,7 @@
 				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
 				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
 				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
+				290BC52A2807268200A62564 /* DetailData.swift */,
 				29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */,
 			);
 			path = DetailPage;
@@ -334,6 +337,7 @@
 				29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */,
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
+				290BC52B2807268300A62564 /* DetailData.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
 				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
