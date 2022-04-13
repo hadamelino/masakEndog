@@ -20,6 +20,8 @@
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
 		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
+		E0E109E628066F0B0022B491 /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E109E528066F0B0022B491 /* Achievement.storyboard */; };
+		E0E109E828066F200022B491 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E109E728066F200022B491 /* AchievementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0E109E528066F0B0022B491 /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		E0E109E728066F200022B491 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		C4342A9827FC20A8005F1E18 /* Egg */ = {
 			isa = PBXGroup;
 			children = (
+				E0E109E428066EFB0022B491 /* Achievement */,
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
 				C4051A1B27FEF5E000B284F6 /* Controller */,
@@ -153,6 +158,15 @@
 				C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */,
 			);
 			path = EggUITests;
+			sourceTree = "<group>";
+		};
+		E0E109E428066EFB0022B491 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				E0E109E528066F0B0022B491 /* Achievement.storyboard */,
+				E0E109E728066F200022B491 /* AchievementViewController.swift */,
+			);
+			path = Achievement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +275,7 @@
 			files = (
 				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
+				E0E109E628066F0B0022B491 /* Achievement.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
 				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +306,7 @@
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
+				E0E109E828066F200022B491 /* AchievementViewController.swift in Sources */,
 				C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */,
 				C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */,
 			);
