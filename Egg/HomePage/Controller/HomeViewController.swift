@@ -38,11 +38,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var bannerImage = "sample_image"
     var bannerText = "Eggs of the day"
     
-    var methodTypeImage = ["water", "oil", "heat"]
-    var methodTypeName = ["Water-based", "Oil-based", "Heat-based"]
+    var methodTypeImage = ["water", "oil", "heat", "water", "oil", "heat"]
+    var methodTypeName = ["Water-based", "Oil-based", "Heat-based", "Water-based", "Oil-based", "Heat-based"]
     
     var recipeName = ["Egg Avo Toast", "Egg & Potato"]
-    var recipeImage = ["avocado egg toast", "egg potato"]
+    var recipeImage = ["Avocado egg toast", "egg potato"]
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
@@ -82,7 +82,16 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.methodImage.image = UIImage(named: methodTypeImage[indexPath.row])
         cell.methodImage.layer.cornerRadius = 15
         cell.methodLabel.text = methodTypeName[indexPath.row]
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            let methodPage = UIStoryboard(name: "EggMethods", bundle: nil).instantiateViewController(withIdentifier: "fromHomepage") as! EggMethodsController
+            self.navigationController?.pushViewController(methodPage, animated: true)
+            //performSegue(withIdentifier: "goToMethod", sender: self)
+        }
     }
     
 

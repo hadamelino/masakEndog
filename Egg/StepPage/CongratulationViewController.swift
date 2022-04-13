@@ -20,16 +20,24 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
     
 
     var segueIdentifier:String = ""
+    var navTitle: String?
     var recipeData = getRecipeData()
     var methodData = getMethodData()
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = navTitle
+        navigationController?.navigationBar.prefersLargeTitles = false
         recipeCV.delegate = self
         recipeCV.dataSource = self
         
-        if segueIdentifier == "congratsFromRecipe" {
+        if segueIdentifier == "awardsToCongrats" {
             otherMethodCV.delegate = self
             otherMethodCV.dataSource = self
         }

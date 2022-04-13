@@ -29,7 +29,10 @@ class EggMethodsController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Oil-Based"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Oil-Based"
+        navigationController?.navigationBar.topItem?.backButtonTitle = "Back"
+        
         methodsCollection.register(UINib(nibName: "MethodsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MethodsCollectionViewCell")
         
     }
@@ -53,6 +56,14 @@ extension EggMethodsController:UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: 334, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            let stepVC = UIStoryboard(name: "StepMethodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromMethod") as! StepMethodViewController
+            self.navigationController?.pushViewController(stepVC, animated: true)
+            //performSegue(withIdentifier: "goToDetail", sender: self)
+        }
     }
 }
 
