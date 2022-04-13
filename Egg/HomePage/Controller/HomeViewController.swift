@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+                
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -38,8 +39,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var bannerImage = "sample_image"
     var bannerText = "Eggs of the day"
     
-    var methodTypeImage = ["water", "oil", "heat", "water", "oil", "heat"]
-    var methodTypeName = ["Water-based", "Oil-based", "Heat-based", "Water-based", "Oil-based", "Heat-based"]
+    var methodTypeImage = ["water", "oil", "heat"]
+    var methodTypeName = ["Water-based", "Oil-based", "Heat-based"]
     
     var recipeName = ["Egg Avo Toast", "Egg & Potato"]
     var recipeImage = ["Avocado egg toast", "egg potato"]
@@ -70,6 +71,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             return recipeCell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let vc = UIStoryboard(name: "DetailPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromMethod") as! DetailPageViewController
+            vc.prevPage = "fromRecipe"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

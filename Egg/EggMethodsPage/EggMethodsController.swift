@@ -60,8 +60,9 @@ extension EggMethodsController:UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 1 {
-            let stepVC = UIStoryboard(name: "StepMethodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromMethod") as! StepMethodViewController
-            self.navigationController?.pushViewController(stepVC, animated: true)
+            let vc = UIStoryboard(name: "DetailPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromMethod") as! DetailPageViewController
+            vc.prevPage = "fromMethod"
+            self.navigationController?.pushViewController(vc, animated: true)
             //performSegue(withIdentifier: "goToDetail", sender: self)
         }
     }

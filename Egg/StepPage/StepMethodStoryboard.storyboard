@@ -12,7 +12,7 @@
         <!--Step Method View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="fromMethod" id="Y6W-OH-hqX" customClass="StepMethodViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fromDetail" id="Y6W-OH-hqX" customClass="StepMethodViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -526,7 +526,7 @@
     </scenes>
     <resources>
         <image name="banner1" width="3508" height="2480"/>
-        <image name="oil" width="1100" height="734"/>
+        <image name="oil" width="6000" height="4000"/>
         <image name="ssu_congrats" width="3492" height="4656"/>
         <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">

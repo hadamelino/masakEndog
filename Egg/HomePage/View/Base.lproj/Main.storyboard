@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.072463768116" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1964" y="-125"/>
         </scene>
         <!--fromHomepage-->
         <scene sceneID="xPe-o2-tWY">
@@ -223,7 +223,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsr-li-KSy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524.6376811594205" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2801" y="-125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jvV-CW-l9O">
@@ -238,11 +238,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="Yxm-Nm-LgM" kind="relationship" relationship="viewControllers" id="v2L-m5-F7D"/>
+                        <segue destination="LkF-9a-2Hq" kind="relationship" relationship="viewControllers" id="0ph-hg-90w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd9-7H-pxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="-297" y="240"/>
         </scene>
         <!--Cook-->
         <scene sceneID="2u6-SY-KB6">
@@ -261,13 +262,43 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZoP-LL-bXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+            <point key="canvasLocation" x="991" y="-125"/>
+        </scene>
+        <!--fromHomepage-->
+        <scene sceneID="5az-LK-Edm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Achievement" referencedIdentifier="fromHomepage" id="nUe-rJ-ZDB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7BI-pq-Hul"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJf-vS-Yge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="591"/>
+        </scene>
+        <!--Awards-->
+        <scene sceneID="iXR-5d-1uW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LkF-9a-2Hq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Awards" image="crown.fill" catalog="system" id="oKW-ob-9VT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SRy-QH-jba">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nUe-rJ-ZDB" kind="relationship" relationship="rootViewController" id="Ni1-Yg-Sdn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqY-ta-iZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="591"/>
         </scene>
     </scenes>
     <resources>
         <image name="Avocado egg toast" width="3976" height="4055"/>
         <image name="banner1" width="3508" height="2480"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="crown.fill" catalog="system" width="128" height="92"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="fork.knife" catalog="system" width="92" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

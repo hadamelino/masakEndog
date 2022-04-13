@@ -23,13 +23,22 @@ class AchievementViewController: UIViewController {
         awardsTableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        self.title = "Awards"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         achievementData     = getAchievementDetail()
         documentationData   = getDocumentationData()
         awardsTableView.register(UINib(nibName: "AchievementTableViewCell", bundle: nil), forCellReuseIdentifier: "AchievementTableViewCell")
         awardsTableView.register(UINib(nibName: "DocumentationTableViewCell", bundle: nil), forCellReuseIdentifier: "DocumentationTableViewCell")
     }
+    
+    
 }
 
 extension AchievementViewController: UITableViewDelegate, UITableViewDataSource{

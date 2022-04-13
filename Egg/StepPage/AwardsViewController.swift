@@ -27,6 +27,7 @@ class AwardsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         continueBtn.layer.cornerRadius = 15
+        awardsImage.image = UIImage(named: "achievement 3")
     }
     
     override func viewWillDisappear(_ animated: Bool) {

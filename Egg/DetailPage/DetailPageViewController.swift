@@ -29,7 +29,7 @@ class DetailPageViewController: UIViewController, UICollectionViewDelegateFlowLa
     @IBOutlet weak var quotes: UILabel!
     
     var detailData: DetailData?
-    var prevPage: String = "fromRecipe"
+    var prevPage: String?
     
     var imageData: [UIImage] = []
     var labelData: [String] = []
@@ -37,16 +37,17 @@ class DetailPageViewController: UIViewController, UICollectionViewDelegateFlowLa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.topItem?.backButtonTitle = "Back"
+
         if prevPage == "fromMethod" {
             detailData = getMethodDetail()
-            
-            detailData = getRecipeDetail()
-            
+                    
             titleLabel.text = detailData?.labelTitle
             desc.text = detailData?.description
             
-            lblBold.text = detailData?.labelBoldIcons[1]
-            lblBold1.text =  detailData?.labelBoldIcons[2]
+            lblBold.text = detailData?.labelBoldIcons[0]
+            lblBold1.text =  detailData?.labelBoldIcons[1]
             
             step1.text = detailData?.steps[0]
             step2.text = detailData?.steps[1]
@@ -76,6 +77,7 @@ class DetailPageViewController: UIViewController, UICollectionViewDelegateFlowLa
         if let detail = detailData {
             imageData = detail.imageIngredients
             labelData = detail.labelIngredients
+            self.title = detail.labelTitle
         }
         else {
             print("Failed to unwrap data!")
@@ -160,5 +162,10 @@ class DetailPageViewController: UIViewController, UICollectionViewDelegateFlowLa
     }
     
     @IBAction func cookButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "StepMethodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromDetail") as! StepMethodViewController
+        vc.previousPage = prevPage
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+
 }

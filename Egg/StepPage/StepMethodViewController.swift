@@ -17,7 +17,7 @@ class StepMethodViewController: UIViewController {
     
     // Edit this when linking all together
     var stepData: StepData?
-    var previousPage = "method"
+    var previousPage: String?
     // =========
     
     var count = 0
@@ -35,7 +35,7 @@ class StepMethodViewController: UIViewController {
         //navigationController?.isNavigationBarHidden = true
         navigationController?.navigationBar.prefersLargeTitles = false
         
-        if previousPage == "method" {
+        if previousPage == "fromMethod" {
             stepData = sunnySideUpMethod()
             segueIdentifier = "congratsFromMethod"
         } else {
