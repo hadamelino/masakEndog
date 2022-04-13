@@ -34,6 +34,16 @@
 		C499659F2805C5EF00D26CC5 /* MethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49965992805C5EF00D26CC5 /* MethodTableViewCell.xib */; };
 		C49965A02805C5EF00D26CC5 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499659A2805C5EF00D26CC5 /* RecipeCollectionViewCell.swift */; };
 		C49965A228074A1700D26CC5 /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965A128074A1700D26CC5 /* AwardsViewController.swift */; };
+		C49965AC28075BF100D26CC5 /* DocumentationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965A428075BF100D26CC5 /* DocumentationData.swift */; };
+		C49965AD28075BF100D26CC5 /* AchievementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49965A528075BF100D26CC5 /* AchievementTableViewCell.xib */; };
+		C49965AE28075BF100D26CC5 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965A628075BF100D26CC5 /* AchievementTableViewCell.swift */; };
+		C49965AF28075BF100D26CC5 /* AchievementData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965A728075BF100D26CC5 /* AchievementData.swift */; };
+		C49965B028075BF100D26CC5 /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49965A828075BF100D26CC5 /* Achievement.storyboard */; };
+		C49965B128075BF100D26CC5 /* DocumentationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965A928075BF100D26CC5 /* DocumentationTableViewCell.swift */; };
+		C49965B228075BF100D26CC5 /* DocumentationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49965AA28075BF100D26CC5 /* DocumentationTableViewCell.xib */; };
+		C49965B328075BF100D26CC5 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965AB28075BF100D26CC5 /* AchievementViewController.swift */; };
+		C49965B628075C2300D26CC5 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965B428075C2300D26CC5 /* DetailData.swift */; };
+		C49965B728075C2300D26CC5 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49965B528075C2300D26CC5 /* ItemsTableViewCell.swift */; };
 		E0E17B372802C4A9001D8FFB /* MethodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E17B332802C4A9001D8FFB /* MethodsCollectionViewCell.xib */; };
 		E0E17B382802C4A9001D8FFB /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E17B342802C4A9001D8FFB /* EggMethods.storyboard */; };
 		E0E17B392802C4A9001D8FFB /* MethodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E17B352802C4A9001D8FFB /* MethodsCollectionViewCell.swift */; };
@@ -89,6 +99,16 @@
 		C49965992805C5EF00D26CC5 /* MethodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodTableViewCell.xib; sourceTree = "<group>"; };
 		C499659A2805C5EF00D26CC5 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 		C49965A128074A1700D26CC5 /* AwardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
+		C49965A428075BF100D26CC5 /* DocumentationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentationData.swift; sourceTree = "<group>"; };
+		C49965A528075BF100D26CC5 /* AchievementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementTableViewCell.xib; sourceTree = "<group>"; };
+		C49965A628075BF100D26CC5 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		C49965A728075BF100D26CC5 /* AchievementData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementData.swift; sourceTree = "<group>"; };
+		C49965A828075BF100D26CC5 /* Achievement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		C49965A928075BF100D26CC5 /* DocumentationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentationTableViewCell.swift; sourceTree = "<group>"; };
+		C49965AA28075BF100D26CC5 /* DocumentationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentationTableViewCell.xib; sourceTree = "<group>"; };
+		C49965AB28075BF100D26CC5 /* AchievementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		C49965B428075C2300D26CC5 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
+		C49965B528075C2300D26CC5 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		E0E17B332802C4A9001D8FFB /* MethodsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodsCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0E17B342802C4A9001D8FFB /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EggMethods.storyboard; sourceTree = "<group>"; };
 		E0E17B352802C4A9001D8FFB /* MethodsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +179,7 @@
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
 				C44A43A127FF400A0059BC91 /* HomePage */,
 				C44A43A027FF3FE80059BC91 /* DetailPage */,
+				C49965A328075BF100D26CC5 /* Achievement */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
 				C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */,
 				C4342AA727FC20A8005F1E18 /* Info.plist */,
@@ -186,6 +207,8 @@
 		C44A43A027FF3FE80059BC91 /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				C49965B428075C2300D26CC5 /* DetailData.swift */,
+				C49965B528075C2300D26CC5 /* ItemsTableViewCell.swift */,
 				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
 				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
 				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
@@ -236,6 +259,21 @@
 				C499659A2805C5EF00D26CC5 /* RecipeCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C49965A328075BF100D26CC5 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				C49965A428075BF100D26CC5 /* DocumentationData.swift */,
+				C49965A528075BF100D26CC5 /* AchievementTableViewCell.xib */,
+				C49965A628075BF100D26CC5 /* AchievementTableViewCell.swift */,
+				C49965A728075BF100D26CC5 /* AchievementData.swift */,
+				C49965A828075BF100D26CC5 /* Achievement.storyboard */,
+				C49965A928075BF100D26CC5 /* DocumentationTableViewCell.swift */,
+				C49965AA28075BF100D26CC5 /* DocumentationTableViewCell.xib */,
+				C49965AB28075BF100D26CC5 /* AchievementViewController.swift */,
+			);
+			path = Achievement;
 			sourceTree = "<group>";
 		};
 		E0E17B3B2802C4EC001D8FFB /* EggMethodsPage */ = {
@@ -356,8 +394,11 @@
 				E0E17B372802C4A9001D8FFB /* MethodsCollectionViewCell.xib in Resources */,
 				C499659C2805C5EF00D26CC5 /* Main.storyboard in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
+				C49965AD28075BF100D26CC5 /* AchievementTableViewCell.xib in Resources */,
+				C49965B228075BF100D26CC5 /* DocumentationTableViewCell.xib in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
 				E0E17B382802C4A9001D8FFB /* EggMethods.storyboard in Resources */,
+				C49965B028075BF100D26CC5 /* Achievement.storyboard in Resources */,
 				C499659F2805C5EF00D26CC5 /* MethodTableViewCell.xib in Resources */,
 				C499658A2805C5CA00D26CC5 /* StepMethodStoryboard.storyboard in Resources */,
 				C49965922805C5CA00D26CC5 /* LoginPageStoryboard.storyboard in Resources */,
@@ -388,14 +429,20 @@
 			files = (
 				C499659B2805C5EF00D26CC5 /* MethodTableViewCell.swift in Sources */,
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
+				C49965B328075BF100D26CC5 /* AchievementViewController.swift in Sources */,
 				C49965872805C5CA00D26CC5 /* StepMethodViewController.swift in Sources */,
+				C49965B728075C2300D26CC5 /* ItemsTableViewCell.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
 				C499659E2805C5EF00D26CC5 /* BannerCollectionViewCell.swift in Sources */,
 				E0E17B3A2802C4A9001D8FFB /* EggMethodsController.swift in Sources */,
+				C49965AC28075BF100D26CC5 /* DocumentationData.swift in Sources */,
+				C49965AF28075BF100D26CC5 /* AchievementData.swift in Sources */,
 				C499658C2805C5CA00D26CC5 /* CongratulationCollectionViewCell.swift in Sources */,
 				E0E17B392802C4A9001D8FFB /* MethodsCollectionViewCell.swift in Sources */,
 				C49965A228074A1700D26CC5 /* AwardsViewController.swift in Sources */,
+				C49965AE28075BF100D26CC5 /* AchievementTableViewCell.swift in Sources */,
 				C49965892805C5CA00D26CC5 /* StepData.swift in Sources */,
+				C49965B128075BF100D26CC5 /* DocumentationTableViewCell.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
 				C49965A02805C5EF00D26CC5 /* RecipeCollectionViewCell.swift in Sources */,
 				C49965882805C5CA00D26CC5 /* CongratulationViewController.swift in Sources */,
@@ -403,6 +450,7 @@
 				C49965912805C5CA00D26CC5 /* LoginViewController.swift in Sources */,
 				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
 				2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */,
+				C49965B628075C2300D26CC5 /* DetailData.swift in Sources */,
 				C499659D2805C5EF00D26CC5 /* customTableView.swift in Sources */,
 				C49965862805C5CA00D26CC5 /* Extension.swift in Sources */,
 			);

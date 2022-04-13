@@ -12,7 +12,7 @@
         <!--Title-->
         <scene sceneID="r8b-E5-JEO">
             <objects>
-                <viewController id="pO8-Je-G6Y" customClass="DetailPageViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goToDetail" id="pO8-Je-G6Y" customClass="DetailPageViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xW6-kd-IYB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,19 +196,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VKj-o3-YXg">
                                                 <rect key="frame" x="37" y="1070" width="347.5" height="14.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heat the pan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-pb-Rp0">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Heat the pan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-pb-Rp0">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crack the egg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-NO-jGT">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crack the egg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-NO-jGT">
                                                         <rect key="frame" x="132.5" y="0.0" width="82.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cook the egg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb0-12-fNA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cook the egg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb0-12-fNA">
                                                         <rect key="frame" x="265" y="0.0" width="82.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                         <nil key="textColor"/>

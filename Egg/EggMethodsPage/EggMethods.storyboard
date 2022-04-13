@@ -83,7 +83,7 @@
         <!--fromMethod-->
         <scene sceneID="8XQ-n2-HK9">
             <objects>
-                <viewControllerPlaceholder storyboardName="StepMethodStoryboard" referencedIdentifier="fromMethod" id="QVY-Ag-qMR" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DetailPageStoryboard" referencedIdentifier="fromMethod" id="QVY-Ag-qMR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mm-bq-y2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628" y="98"/>
