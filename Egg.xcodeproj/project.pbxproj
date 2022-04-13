@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */; };
-		290BC52B2807268300A62564 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BC52A2807268200A62564 /* DetailData.swift */; };
-		2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */; };
-		2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870C27FF382E009F00B0 /* DetailPageViewController.swift */; };
-		2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */; };
 		C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */; };
 		C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */; };
 		C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4051A1227FEBE3000B284F6 /* customTableView.swift */; };
@@ -25,8 +20,8 @@
 		C4342ABB27FC20A9005F1E18 /* EggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABA27FC20A9005F1E18 /* EggUITests.swift */; };
 		C4342ABD27FC20A9005F1E18 /* EggUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */; };
 		C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */; };
-		E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069AA202800334C00195BAC /* EggMethodsController.swift */; };
-		E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069AA212800334C00195BAC /* EggMethods.storyboard */; };
+		E0E109E628066F0B0022B491 /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E109E528066F0B0022B491 /* Achievement.storyboard */; };
+		E0E109E828066F200022B491 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E109E728066F200022B491 /* AchievementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
-		290BC52A2807268200A62564 /* DetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
-		2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPageStoryboard.storyboard; sourceTree = "<group>"; };
-		2962870C27FF382E009F00B0 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
-		2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailPageCollectionViewCell.swift; path = Egg/DetailPage/DetailPageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		C40519CE27FDC6A700B284F6 /* MethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodTableViewCell.swift; sourceTree = "<group>"; };
 		C40519CF27FDC6A700B284F6 /* MethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodTableViewCell.xib; sourceTree = "<group>"; };
 		C4051A1227FEBE3000B284F6 /* customTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableView.swift; sourceTree = "<group>"; };
@@ -69,8 +59,8 @@
 		C4342ABA27FC20A9005F1E18 /* EggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITests.swift; sourceTree = "<group>"; };
 		C4342ABC27FC20A9005F1E18 /* EggUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4ABDC5727FCA7A9005518A4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
-		E069AA202800334C00195BAC /* EggMethodsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EggMethodsController.swift; path = Egg/View/EggMethodsController.swift; sourceTree = SOURCE_ROOT; };
-		E069AA212800334C00195BAC /* EggMethods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EggMethods.storyboard; path = Egg/View/EggMethods.storyboard; sourceTree = SOURCE_ROOT; };
+		E0E109E528066F0B0022B491 /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		E0E109E728066F200022B491 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,11 +131,11 @@
 		C4342A9827FC20A8005F1E18 /* Egg */ = {
 			isa = PBXGroup;
 			children = (
+				E0E109E428066EFB0022B491 /* Achievement */,
 				C4342A9927FC20A8005F1E18 /* AppDelegate.swift */,
 				C4342A9B27FC20A8005F1E18 /* SceneDelegate.swift */,
-				C44A43A227FF45B10059BC91 /* EggMethodPage */,
-				C44A43A127FF400A0059BC91 /* HomePage */,
-				C44A43A027FF3FE80059BC91 /* DetailPage */,
+				C4051A1B27FEF5E000B284F6 /* Controller */,
+				C4051A1C27FEF5EA00B284F6 /* View */,
 				C4342AA227FC20A8005F1E18 /* Assets.xcassets */,
 				C4342AA427FC20A8005F1E18 /* LaunchScreen.storyboard */,
 				C4342AA727FC20A8005F1E18 /* Info.plist */,
@@ -170,34 +160,13 @@
 			path = EggUITests;
 			sourceTree = "<group>";
 		};
-		C44A43A027FF3FE80059BC91 /* DetailPage */ = {
+		E0E109E428066EFB0022B491 /* Achievement */ = {
 			isa = PBXGroup;
 			children = (
-				2962870E27FF3972009F00B0 /* DetailPageCollectionViewCell.swift */,
-				2962870C27FF382E009F00B0 /* DetailPageViewController.swift */,
-				2962870A27FF37FF009F00B0 /* DetailPageStoryboard.storyboard */,
-				290BC52A2807268200A62564 /* DetailData.swift */,
-				29032D072805D9C400B94AAD /* ItemsTableViewCell.swift */,
+				E0E109E528066F0B0022B491 /* Achievement.storyboard */,
+				E0E109E728066F200022B491 /* AchievementViewController.swift */,
 			);
-			path = DetailPage;
-			sourceTree = "<group>";
-		};
-		C44A43A127FF400A0059BC91 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				C4051A1B27FEF5E000B284F6 /* Controller */,
-				C4051A1C27FEF5EA00B284F6 /* View */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		C44A43A227FF45B10059BC91 /* EggMethodPage */ = {
-			isa = PBXGroup;
-			children = (
-				E069AA212800334C00195BAC /* EggMethods.storyboard */,
-				E069AA202800334C00195BAC /* EggMethodsController.swift */,
-			);
-			path = EggMethodPage;
+			path = Achievement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,10 +275,9 @@
 			files = (
 				C40519D127FDC6A700B284F6 /* MethodTableViewCell.xib in Resources */,
 				C4342AA627FC20A8005F1E18 /* LaunchScreen.storyboard in Resources */,
+				E0E109E628066F0B0022B491 /* Achievement.storyboard in Resources */,
 				C4342AA327FC20A8005F1E18 /* Assets.xcassets in Resources */,
-				E069AA232800334C00195BAC /* EggMethods.storyboard in Resources */,
 				C4342AA127FC20A8005F1E18 /* Main.storyboard in Resources */,
-				2962870B27FF37FF009F00B0 /* DetailPageStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,15 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29032D082805D9C400B94AAD /* ItemsTableViewCell.swift in Sources */,
 				C4342A9E27FC20A8005F1E18 /* HomeViewController.swift in Sources */,
 				C4342A9A27FC20A8005F1E18 /* AppDelegate.swift in Sources */,
-				290BC52B2807268300A62564 /* DetailData.swift in Sources */,
 				C4ABDC5827FCA7A9005518A4 /* BannerCollectionViewCell.swift in Sources */,
-				E069AA222800334C00195BAC /* EggMethodsController.swift in Sources */,
 				C4342A9C27FC20A8005F1E18 /* SceneDelegate.swift in Sources */,
-				2962870F27FF3972009F00B0 /* DetailPageCollectionViewCell.swift in Sources */,
-				2962870D27FF382E009F00B0 /* DetailPageViewController.swift in Sources */,
+				E0E109E828066F200022B491 /* AchievementViewController.swift in Sources */,
 				C4051A1327FEBE3000B284F6 /* customTableView.swift in Sources */,
 				C40519D027FDC6A700B284F6 /* MethodTableViewCell.swift in Sources */,
 			);
@@ -523,12 +487,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D5XKY44W6D;
+				DEVELOPMENT_TEAM = 33Y7QP4CD9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = DetailPageStoryboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Achievement;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eggV1.Egg;
+				PRODUCT_BUNDLE_IDENTIFIER = apptelor.Egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -551,12 +515,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D5XKY44W6D;
+				DEVELOPMENT_TEAM = 33Y7QP4CD9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Egg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = DetailPageStoryboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Achievement;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eggV1.Egg;
+				PRODUCT_BUNDLE_IDENTIFIER = apptelor.Egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
