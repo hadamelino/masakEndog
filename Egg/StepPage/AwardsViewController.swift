@@ -50,6 +50,7 @@ class AwardsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! CongratulationViewController
+        vc.segueIdentifier = "awardsToCongrats"
         vc.navTitle = navTitle
     }
     

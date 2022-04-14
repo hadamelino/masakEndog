@@ -21,8 +21,8 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
 
     var segueIdentifier:String = ""
     var navTitle: String?
-    var recipeData = getRecipeData()
-    var methodData = getMethodData()
+    var recipeData: CollectionViewData?
+    var methodData: CollectionViewData?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,14 +32,21 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         self.title = navTitle
         navigationController?.navigationBar.prefersLargeTitles = false
+        print(segueIdentifier)
         recipeCV.delegate = self
         recipeCV.dataSource = self
+        recipeData = getRecipeData("method")
+        recipeImage.image = UIImage(named: "ssu_congrats")
         
         if segueIdentifier == "awardsToCongrats" {
             otherMethodCV.delegate = self
             otherMethodCV.dataSource = self
+            recipeImage.image = UIImage(named: "Avocado egg toast")
+            methodData = getMethodData()
+            recipeData = getRecipeData("recipe")
         }
         
         // Do any additional setup after loading the view.
@@ -67,16 +74,16 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if segueIdentifier == "congratsFromRecipe" {
+        if segueIdentifier == "awardsToCongrats" {
             if collectionView.tag == 0 {
-                return recipeData.dataName.count
+                return recipeData!.dataName.count
                 
             } else if collectionView.tag == 1 {
-                return methodData.dataName.count
+                return methodData!.dataName.count
             }
         } else {
 
-            return recipeData.dataName.count
+            return recipeData!.dataName.count
             
         }
         return 0
@@ -84,27 +91,27 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if segueIdentifier == "congratsFromRecipe" {
+        if segueIdentifier == "awardsToCongrats" {
             if collectionView.tag == 0 {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
-                cell.contentName.text = recipeData.dataName[indexPath.row]
-                cell.contentImage.image = UIImage(named: recipeData.dataImage[indexPath.row])
+                cell.contentName.text = recipeData!.dataName[indexPath.row]
+                cell.contentImage.image = UIImage(named: recipeData!.dataImage[indexPath.row])
                 return cell
                 
             } else if collectionView.tag == 1 {
                 
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "methodCell", for: indexPath) as! CongratulationCollectionViewCell
-                cell.contentName.text = methodData.dataName[indexPath.row]
-                cell.contentImage.image = UIImage(named: methodData.dataImage[indexPath.row])
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "otherMethodCell", for: indexPath) as! CongratulationCollectionViewCell
+                cell.contentName.text = methodData!.dataName[indexPath.row]
+                cell.contentImage.image = UIImage(named: methodData!.dataImage[indexPath.row])
                 return cell
                 
             }
         } else {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
-            cell.contentName.text = recipeData.dataName[indexPath.row]
-            cell.contentImage.image = UIImage(named: recipeData.dataImage[indexPath.row])
+            cell.contentName.text = recipeData!.dataName[indexPath.row]
+            cell.contentImage.image = UIImage(named: recipeData!.dataImage[indexPath.row])
             return cell
             
         }
