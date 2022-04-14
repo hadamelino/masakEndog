@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Egg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1060"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoa-2n-Sqv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1060"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBk-1C-jYS">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1060"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBk-1C-jYS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="70G-2O-bzd">
                                                 <rect key="frame" x="20" y="0.0" width="374" height="252"/>
@@ -173,7 +173,7 @@
                                     <constraint firstAttribute="trailing" secondItem="cBk-1C-jYS" secondAttribute="trailing" id="1xK-PQ-00G"/>
                                     <constraint firstItem="cBk-1C-jYS" firstAttribute="top" secondItem="Yoa-2n-Sqv" secondAttribute="top" id="QKh-2w-OKZ"/>
                                     <constraint firstItem="cBk-1C-jYS" firstAttribute="leading" secondItem="Yoa-2n-Sqv" secondAttribute="leading" id="nJN-Xb-CaJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="cBk-1C-jYS" secondAttribute="bottom" id="yWH-Wq-oJ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="cBk-1C-jYS" secondAttribute="bottom" constant="-95" id="yWH-Wq-oJ1"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -200,7 +200,7 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="1060"/>
+                    <size key="freeformSize" width="414" height="950"/>
                     <connections>
                         <outlet property="collectionView" destination="70G-2O-bzd" id="nye-QV-dR7"/>
                         <outlet property="greyBackground" destination="9Om-H6-C9z" id="v6b-kO-816"/>
