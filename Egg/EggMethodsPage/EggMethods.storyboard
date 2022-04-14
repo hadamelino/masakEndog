@@ -53,7 +53,7 @@
                                 <constraints>
                                     <constraint firstItem="Gvv-ar-3BM" firstAttribute="leading" secondItem="azj-ON-7jV" secondAttribute="leading" id="LfO-vf-WX9"/>
                                     <constraint firstItem="Gvv-ar-3BM" firstAttribute="top" secondItem="azj-ON-7jV" secondAttribute="top" id="Tnr-Ne-Mhk"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gvv-ar-3BM" secondAttribute="bottom" id="YNv-un-Zfm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gvv-ar-3BM" secondAttribute="bottom" constant="-96" id="YNv-un-Zfm"/>
                                     <constraint firstAttribute="trailing" secondItem="Gvv-ar-3BM" secondAttribute="trailing" id="mFP-3d-Df8"/>
                                     <constraint firstItem="Gvv-ar-3BM" firstAttribute="width" secondItem="azj-ON-7jV" secondAttribute="width" id="sAB-QJ-c6T"/>
                                 </constraints>
