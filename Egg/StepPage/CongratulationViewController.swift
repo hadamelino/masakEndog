@@ -119,5 +119,15 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
         return UICollectionViewCell()
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if segueIdentifier != "awardsToCongrats" {
+            if indexPath.row == 0 {
+                let vc = UIStoryboard(name: "DetailPageStoryboard", bundle: nil).instantiateViewController(withIdentifier: "fromMethod") as! DetailPageViewController
+                vc.prevPage = "fromRecipe"
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
 
 }

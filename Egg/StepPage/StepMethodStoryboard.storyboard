@@ -517,11 +517,22 @@
                         <outlet property="recipeImage" destination="NeR-q2-Bah" id="fUM-Hc-ER6"/>
                         <outlet property="reciveCVLabel" destination="Wdv-zF-Dke" id="jUn-5t-zoV"/>
                         <outlet property="scrollView" destination="AG3-Tw-5Hu" id="mjc-OJ-Ivo"/>
+                        <segue destination="WMr-JM-Ain" kind="show" identifier="goToDetail" id="IMW-8A-w4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcv-9B-h4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3916" y="388"/>
+        </scene>
+        <!--fromMethod-->
+        <scene sceneID="HaB-FE-Hj8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailPageStoryboard" referencedIdentifier="fromMethod" id="WMr-JM-Ain" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JQN-PP-byN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHH-2m-WRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4659" y="387"/>
         </scene>
     </scenes>
     <resources>
