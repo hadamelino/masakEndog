@@ -55,12 +55,14 @@ class StepMethodViewController: UIViewController {
             print("Failed to fetch data")
             return
         }
-        
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     @IBAction func nextStepPressed(_ sender: Any) {
-        
         if let data = stepData {
             if count < data.stepText.count {
                 stepImage.fadeTransition(0.5, .push, .fromRight)
@@ -80,7 +82,6 @@ class StepMethodViewController: UIViewController {
             print("Failed to fetch data")
             return
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
