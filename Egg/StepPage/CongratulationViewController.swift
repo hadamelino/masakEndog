@@ -97,6 +97,7 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
                 cell.contentName.text = recipeData!.dataName[indexPath.row]
                 cell.contentImage.image = UIImage(named: recipeData!.dataImage[indexPath.row])
+                cell.layer.cornerRadius = 15
                 return cell
                 
             } else if collectionView.tag == 1 {
@@ -104,6 +105,8 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "otherMethodCell", for: indexPath) as! CongratulationCollectionViewCell
                 cell.contentName.text = methodData!.dataName[indexPath.row]
                 cell.contentImage.image = UIImage(named: methodData!.dataImage[indexPath.row])
+                cell.layer.cornerRadius = 15
+
                 return cell
                 
             }
@@ -112,6 +115,8 @@ class CongratulationViewController: UIViewController, UICollectionViewDataSource
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as! CongratulationCollectionViewCell
             cell.contentName.text = recipeData!.dataName[indexPath.row]
             cell.contentImage.image = UIImage(named: recipeData!.dataImage[indexPath.row])
+            cell.layer.cornerRadius = 15
+
             return cell
             
         }
